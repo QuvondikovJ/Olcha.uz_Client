@@ -1,0 +1,34 @@
+.prev, .next {
+  position: absolute;
+  top: 48%;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ededed;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .2s linear;
+  i {
+    font-size: 16px;
+    color: #212529;
+    transition: color .2s linear;
+  }
+}
+
+.prev {
+  left: -18px;
+}
+
+.next {
+  right: -18px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #EB1537;
+
+  i {
+    color: #fff;
+  }
+}

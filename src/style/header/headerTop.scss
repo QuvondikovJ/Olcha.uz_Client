@@ -1,0 +1,180 @@
+.header_top {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+
+    /* Navbar*/
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 8px;
+      border-bottom: .4px solid var(--navbar_border);
+
+
+      /* Nav_Left */
+      .nav_left {
+        padding: 3px 0;
+
+        a {
+          text-decoration: none;
+          color: var(--header_link);
+          padding: 0 7px;
+        }
+
+        a:hover {
+          color: var(--header_link_hover);
+        }
+
+        a.active {
+          color: #EB1537;
+        }
+
+        span {
+          opacity: var(--navbar_span_opactiy);
+          color: var(--header_link);
+        }
+
+      }
+
+
+      /* Nav_Right */
+      .nav_right {
+        padding: 3px 0;
+        display: flex;
+
+        a {
+          text-decoration: none;
+          color: var(--header_link);
+          margin: 0 15px;
+        }
+
+        a:hover {
+          color: var(--header_link_hover);
+        }
+
+        .changeBackground {
+          display: flex;
+
+          .bg {
+            width: 50px;
+            height: 26px;
+            border: 1px solid var(--navbar_checkbox_border);
+            border-radius: 26px;
+            background-color: #eee;
+            display: block;
+            margin-top: -2px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color .2s linear;
+
+            .full_moon {
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              background-color: #FD8400;
+              border-radius: 50%;
+              top: 4px;
+              left: 4px;
+              transition: left .2s linear,
+              opacity .2s linear;
+            }
+
+            i {
+              opacity: 0;
+              position: absolute;
+              right: 4px;
+              top: 4px;
+              font-size: 16px;
+              color: #FD8400;
+              transform: rotate(210deg);
+              transition: opacity .2s linear;
+            }
+
+          }
+
+          input {
+            display: none;
+          }
+
+          input:checked + .bg {
+            background-color: #111111;
+
+            .full_moon {
+              left: 26px;
+              opacity: 0;
+            }
+
+            i {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+}
+
+
+@media (max-width: 1230px) {
+
+/* Bu width da xech narsa o'zgarmadi */
+
+}
+
+@media (max-width: 990px) {
+
+  /* Bu widthda navbar-right ni birinchi 2 ta elementi display:none qilindi */
+
+  .header_top .container {
+    max-width: 730px;
+
+    .navbar .nav_right {
+
+      a:first-child,
+      a:nth-child(2) {
+        display: none;
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 770px) {
+
+  /* Bu widthda navbar-right ni 3 va 4 - elementlari display:none qilindi */
+
+  .header_top .container{
+
+    max-width: 540px;
+
+    .navbar .nav_right{
+
+      a:nth-child(3),
+      a:nth-child(4){
+        display: none;
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 400px) {
+  .header_top .navbar .nav_right{
+
+    a:nth-child(5){
+      display: none;
+    }
+
+  }
+}

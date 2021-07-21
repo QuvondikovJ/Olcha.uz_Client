@@ -1,0 +1,126 @@
+.category_block {
+  margin-bottom: 45px;
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .title {
+      font-size: 26px;
+      color: var(--new_products);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .slider {
+      position: relative;
+
+      .slider_item {
+        margin-right: 20px;
+
+        .category {
+          width: 240px;
+          height: 86px;
+          padding: 10px;
+          border-radius: 8px;
+          background-color: var(--search_bg);
+          border: 1px solid var(--search_border);
+          display: flex;
+          align-items: center;
+          margin: 0 10px;
+          cursor: pointer;
+
+          img {
+            width: 60px;
+            height: 50px;
+            margin-right: 10px;
+          }
+
+          .category_name {
+            color: var(--new_products);
+            font-size: 15px;
+            font-weight: 700;
+            height: 20px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-bottom: 0;
+          }
+        }
+
+        .category:hover {
+          border-color: #eb1537;
+          box-shadow: 0 2px 5px 2px rgba(235, 21, 55, .3);
+        }
+
+      }
+
+      .prev, .next {
+        top: 30%;
+      }
+
+      .prev.disabled,
+      .next.disabled {
+        opacity: .4;
+        pointer-events: none;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 1230px) {
+
+  .category_block .container .slider
+  .slider_item .category {
+    width: 220px;
+    padding: 5px 10px;
+  }
+
+}
+
+@media (max-width: 990px) {
+
+  .category_block .container {
+    max-width: 730px;
+  }
+
+}
+
+
+@media (max-width: 770px) {
+
+  .category_block .container {
+    max-width: 540px;
+
+    .slider .slider_item .category {
+      width: 180px;
+      padding: 10px 5px;
+      height: 75px;
+    }
+
+  }
+
+}
+
+@media (max-width: 575px) {
+
+  .category_block {
+    margin-bottom: 15px;
+
+    .container {
+
+      .slider .slider_item .category {
+        margin: 0 5px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+    }
+  }
+}

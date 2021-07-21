@@ -1,0 +1,30 @@
+.path {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: var(--path_bg);
+  border-radius: 6px;
+  margin-bottom: 25px;
+
+  a {
+    text-decoration: none;
+    color: var(--path_color);
+    font-size: 15px;
+  }
+
+  span {
+    color: var(--path_color);
+    opacity: .4;
+    margin: 0 5px;
+  }
+
+  a:hover {
+    color: var(--path_hover);
+  }
+
+}
+@media (max-width: 575px) {
+  .path a{
+    font-size: 13px;
+  }
+
+}

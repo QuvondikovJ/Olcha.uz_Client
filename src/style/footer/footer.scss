@@ -1,0 +1,150 @@
+.footer {
+  padding: 45px 0;
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    .footer_inner {
+      display: flex;
+
+      .footer_item {
+        padding: 0 10px;
+        flex: 1 1 0;
+
+        .logo {
+          margin-bottom: 25px;
+        }
+
+        .footer_link,
+        .right_reserved {
+          font-size: 16px;
+          color: var(--product_name);
+          margin-bottom: 10px;
+          line-height: 1.2;
+          text-decoration: none;
+          display: block;
+        }
+
+        .footer_link.compare {
+          display: none;
+        }
+
+        .footer_phone {
+          width: 100%;
+          padding: 20px;
+          border-radius: 6px;
+          background-color: var(--login_bg);
+          border: 1px solid var(--search_border);
+
+          span:first-child {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--product_name);
+            display: block;
+          }
+
+          span:last-child a {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--product_name);
+            text-decoration: none;
+            line-height: 1;
+
+          }
+
+        }
+
+        .footer_link:hover {
+          color: #eb1537;
+        }
+
+      }
+
+      .footer_item:nth-child(2),
+      .footer_item:nth-child(3) {
+        padding-top: 15px;
+      }
+
+    }
+
+
+  }
+
+}
+
+@media (max-width: 1230px) {
+  .footer .container {
+
+    .footer_inner .footer_item {
+     .footer_phone{
+       span:last-child a{
+         font-size: 19px;
+       }
+     }
+      }
+    }
+}
+
+@media (max-width: 990px) {
+
+  .footer .container {
+    max-width: 730px;
+
+    .footer_inner .footer_item {
+      .footer_link,
+      .right_reserved {
+        font-size: 15px;
+
+      }
+
+      .footer_phone {
+        padding: 20px 10px;
+        span:first-child {
+          font-size: 16px;
+        }
+
+        span:nth-child(2) a {
+          font-size: 18px;
+        }
+
+      }
+    }
+
+  }
+}
+
+@media (max-width: 770px) {
+
+  .footer .container {
+    max-width: 540px;
+
+    .footer_inner{
+ display: block;
+
+      .footer_item{
+        margin-bottom: 15px;
+        padding: 0;
+      }
+      .footer_item:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .footer .container .footer_inner .footer_item {
+
+    .footer_link.compare {
+      display: block;
+    }
+
+  }
+}

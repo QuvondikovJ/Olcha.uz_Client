@@ -1,0 +1,281 @@
+.profile_edit_comp {
+  margin-bottom: 60px;
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    .profile_edit_inner {
+
+      display: flex;
+      align-items: flex-start;
+
+      .profile_edit_item:last-child {
+        width: 520px;
+        padding: 0 15px;
+
+        .row {
+          margin-bottom: 28px;
+
+          .col-md-6 {
+
+            input {
+              width: 100%;
+              height: 40px;
+              outline: none;
+              border-radius: 5px;
+              border: 1px solid var(--search_border);
+              padding-left: 10px;
+              font-size: 15px;
+              color: var(--new_products);
+              background-color: var(--search_bg);
+            }
+
+            label {
+              font-size: 15px;
+              margin-bottom: 5px;
+              color: var(--product_name);
+              cursor: pointer;
+            }
+
+
+            .row {
+              height: 100%;
+              position: relative;
+
+              .radio_title {
+                font-size: 15px;
+                color: var(--product_name);
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+
+              .col-6 {
+                height: 100%;
+                padding-top: 20px;
+                display: flex;
+                align-items: center;
+
+                input {
+                  width: 20px;
+                  height: 20px;
+                  margin-right: 10px;
+                }
+              }
+            }
+
+            input:focus {
+              border-color: #eb1537;
+            }
+
+          }
+
+          .col-md-6.phone_number {
+            input {
+              background-color: var(--offer_block_bg);
+            }
+          }
+
+        }
+
+        .password_edit {
+          width: 175px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          outline: none;
+          border: 1.5px solid #FF9017;
+          border-radius: 6px;
+          background-color: var(--body_bg);
+          margin-bottom: 20px;
+          transition: background-color .2s linear;
+
+          .lock_icon {
+            display: block;
+            width: 24px;
+            height: 22px;
+            fill: var(--password_edit_btn_opposite);
+          }
+
+          span {
+            color: var(--password_edit_btn_opposite);
+            font-size: 15px;
+          }
+        }
+
+        .password_edit:hover {
+          background-color: #FF9017;
+
+          .lock_icon {
+            fill: #fff;
+          }
+
+          span {
+            color: #fff;
+          }
+        }
+
+        .password_edit:active {
+          background-color: darken(#FF9017, 10%);
+          transform: scale(.99);
+        }
+
+
+        .change_password_block {
+
+
+          .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            label {
+              font-size: 16px;
+              color: var(--product_name);
+              width: max-content;
+              cursor: pointer;
+            }
+
+            input {
+              width: 100%;
+              display: block;
+              outline: none;
+              border-radius: 6px;
+              border: 1px solid var(--navbar_border);
+              padding-left: 10px;
+              font-size: 15px;
+              height: 40px;
+              box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+              background-color: var(--search_bg);
+              color: var(--new_products);
+            }
+
+            input:focus {
+              border-color: #eb1537;
+            }
+          }
+
+          .item:first-child label {
+            min-width: 90px;
+          }
+
+          .item:nth-child(2) label {
+            min-width: 100px;
+          }
+
+          .item:last-child label {
+            min-width: 150px;
+          }
+        }
+
+
+        a .cancel {
+          width: 100px;
+          height: 40px;
+          outline: none;
+          border-radius: 6px;
+          border: 1px solid var(--navbar_border);
+          background-color: var(--search_bg);
+          font-size: 15px;
+          color: var(--new_products);
+          margin-top: 20px;
+        }
+
+        a .cancel:hover {
+          border-color: #a19d9d;
+        }
+
+        a .save {
+          width: 125px;
+          height: 40px;
+          outline: none;
+          border-radius: 6px;
+          border: 0;
+          background-color: #eb1537;
+          font-size: 15px;
+          color: #fff;
+          margin-left: 15px;
+          margin-top: 20px;
+        }
+
+        a .save:hover {
+          background-color: darken(#eb1537, 10%);
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 990px) {
+
+  .profile_edit_comp .container {
+    max-width: 730px;
+  }
+}
+
+@media (max-width: 770px) {
+
+  .profile_edit_comp .container {
+    max-width: 540px;
+
+
+    .profile_edit_inner {
+      display: block;
+
+      .profile_edit_item:last-child {
+        width: 510px;
+
+        .row {
+          display: flex;
+
+          .col-md-6 {
+            flex: 1 1 0;
+          }
+
+        }
+
+      }
+
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .profile_edit_comp .container {
+    max-width: 100%;
+
+    .profile_edit_inner {
+
+      .profile_edit_item:last-child {
+
+        max-width: 100%;
+        width: 100%;
+
+        .row {
+          display: block;
+          margin-bottom: 0;
+
+          .col-md-6 {
+            flex: none;
+            margin-bottom: 15px;
+
+            .row.radio {
+              display: flex;
+
+              .col-6 {
+                flex: 1 1 0;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

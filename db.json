@@ -1,0 +1,1404 @@
+{
+ "categories" :  [
+  {
+   "id": 1,
+   "parentCategory": null,
+   "name": "Smartfon, telefon, gadjet, aksessuarlar",
+   "img" : "file:///D:/programs/Full%20Stack%20projects/agregator_of_news/client/src/images/techblog21.jpg"
+  },
+  {
+   "id": 2,
+   "parentCategory": null,
+   "name": "Noutbuk, printer, kompyuterlar",
+   "img" : "file:///D:/programs/Full%20Stack%20projects/agregator_of_news/client/src/images/techblog21.jpg"
+
+  },
+  {
+   "id": 3,
+   "parentCategory": null,
+   "name": "Televizor, foto-video va audio",
+   "img" : "file:///D:/programs/Full%20Stack%20projects/agregator_of_news/client/src/images/techblog21.jpg"
+  },
+  {
+   "id": 4,
+   "parentCategory": null,
+   "name": "Geymerlar uchun",
+   "img" : "file:///D:/programs/Full%20Stack%20projects/agregator_of_news/client/src/images/techblog21.jpg"
+  },
+  {
+   "id": 5,
+   "parentCategory": null,
+   "name": "Maishiy texnika",
+   "img" : "file:///D:/programs/Full%20Stack%20projects/agregator_of_news/client/src/images/techblog21.jpg"
+  },
+  {
+   "id": 6,
+   "parentCategory": null,
+   "name": "Oshxona texnikasi",
+   "img" : "file:///D:/programs/Full%20Stack%20projects/agregator_of_news/client/src/images/techblog21.jpg"
+  },
+  {
+   "id": 7,
+   "parentCategory": null,
+   "name": "Barcha ofis, uy va bog' uchun",
+   "img" : "file:///D:/programs/Full%20Stack%20projects/agregator_of_news/client/src/images/techblog21.jpg"
+  },
+  {
+   "id": 8,
+   "parentCategory": null,
+   "name": "Sport anjomlari",
+   "img" : "file:///D:/programs/Full%20Stack%20projects/agregator_of_news/client/src/images/techblog21.jpg"
+  },
+  {
+   "id": 9,
+   "parentCategory": 1,
+   "name": "Smartfonlar"
+  },
+  {
+   "id": 10,
+   "parentCategory": 1,
+   "name": "Aksessuarlar"
+  },
+  {
+   "id": 11,
+   "parentCategory": 1,
+   "name": "Tugmali telefonlar"
+  },
+  {
+   "id": 12,
+   "parentCategory": 1,
+   "name": "Planshetlar"
+  },
+  {
+   "id": 13,
+   "parentCategory": 1,
+   "name": "Telefonlar"
+  },
+  {
+   "id": 14,
+   "parentCategory": 1,
+   "name": "Smart watches"
+  },
+  {
+   "id": 15,
+   "parentCategory": 1,
+   "name": "Sovg'alar vaucheri"
+  },
+  {
+   "id": 16,
+   "parentCategory": 9,
+   "name": "Apple"
+  },
+  {
+   "id": 17,
+   "parentCategory": 9,
+   "name": "Samsung"
+  },
+  {
+   "id": 18,
+   "parentCategory": 9,
+   "name": "Xiaomi"
+  },
+  {
+   "id": 19,
+   "parentCategory": 9,
+   "name": "Asus"
+  },
+  {
+   "id": 20,
+   "parentCategory": 9,
+   "name": "Huawei"
+  },
+  {
+   "id": 21,
+   "parentCategory": 9,
+   "name": "Blackview"
+  },
+  {
+   "id": 22,
+   "parentCategory": 9,
+   "name": "BQ"
+  },
+  {
+   "id": 23,
+   "parentCategory": 9,
+   "name": "INOI"
+  },
+  {
+   "id": 24,
+   "parentCategory": 9,
+   "name": "Vivo"
+  },
+  {
+   "id": 25,
+   "parentCategory": 9,
+   "name": "Realme"
+  },
+  {
+   "id": 26,
+   "parentCategory": 9,
+   "name": "Techno Mobile"
+  },
+  {
+   "id": 27,
+   "parentCategory": 9,
+   "name": "Infinix"
+  },
+  {
+   "id": 28,
+   "parentCategory": 10,
+   "name": "Selfie Stick"
+  },
+  {
+   "id": 29,
+   "parentCategory": 10,
+   "name": "Power bank"
+  },
+  {
+   "id": 30,
+   "parentCategory": 10,
+   "name": "Garnituralar"
+  },
+  {
+   "id": 31,
+   "parentCategory": 10,
+   "name": "Kabellar"
+  },
+  {
+   "id": 32,
+   "parentCategory": 10,
+   "name": "G'iloflar va himoya oynalari"
+  },
+  {
+   "id": 33,
+   "parentCategory": 10,
+   "name": "Zaryadlovchi qurilmalar"
+  },
+  {
+   "id": 34,
+   "parentCategory": 10,
+   "name": "Xotira kartalari"
+  },
+  {
+   "id": 35,
+   "parentCategory": 10,
+   "name": "Speaker"
+  },
+  {
+   "id": 36,
+   "parentCategory": 11,
+   "name": "Samsung"
+  },
+  {
+   "id": 37,
+   "parentCategory": 11,
+   "name": "Philips"
+  },
+  {
+   "id": 38,
+   "parentCategory": 11,
+   "name": "Nokia"
+  },
+  {
+   "id": 39,
+   "parentCategory": 11,
+   "name": "BQ"
+  },
+  {
+   "id": 40,
+   "parentCategory": 11,
+   "name": "INOI"
+  },
+  {
+   "id": 41,
+   "parentCategory": 11,
+   "name": "Nobby"
+  },
+  {
+   "id": 42,
+   "parentCategory": 11,
+   "name": "Olmio"
+  },
+  {
+   "id": 43,
+   "parentCategory": 11,
+   "name": "Prestigio"
+  },
+  {
+   "id": 44,
+   "parentCategory": 12,
+   "name": "Apple"
+  },
+  {
+   "id": 45,
+   "parentCategory": 12,
+   "name": "Samsung"
+  },
+  {
+   "id": 46,
+   "parentCategory": 12,
+   "name": "Lenovo"
+  },
+  {
+   "id": 47,
+   "parentCategory": 12,
+   "name": "Huawei"
+  },
+  {
+   "id": 48,
+   "parentCategory": 12,
+   "name": "Blackview"
+  },
+  {
+   "id": 49,
+   "parentCategory": 12,
+   "name": "BQ"
+  },
+  {
+   "id": 50,
+   "parentCategory": 12,
+   "name": "Microsoft"
+  },
+  {
+   "id": 51,
+   "parentCategory": 13,
+   "name": "Radio telefonlar"
+  },
+  {
+   "id": 52,
+   "parentCategory": 13,
+   "name": "Simli telefonlar"
+  },
+  {
+   "id": 53,
+   "parentCategory": 13,
+   "name": "Ratsiyalar"
+  },
+  {
+   "id": 54,
+   "parentCategory": 14,
+   "name": "Apple"
+  },
+  {
+   "id": 55,
+   "parentCategory": 14,
+   "name": "Samsung"
+  },
+  {
+   "id": 56,
+   "parentCategory": 14,
+   "name": "Xiaomi"
+  },
+  {
+   "id": 57,
+   "parentCategory": 14,
+   "name": "Asus"
+  },
+  {
+   "id": 58,
+   "parentCategory": 14,
+   "name": "Huawei"
+  },
+  {
+   "id": 59,
+   "parentCategory": 14,
+   "name": "Pandora"
+  },
+  {
+   "id": 60,
+   "parentCategory": 14,
+   "name": "Montblanc"
+  },
+  {
+   "id": 61,
+   "parentCategory": 14,
+   "name": "Amazfit"
+  },
+  {
+   "id": 62,
+   "parentCategory": 14,
+   "name": "Haylou"
+  },
+  {
+   "id": 63,
+   "parentCategory": 15,
+   "name": "Olcha.uz"
+  },
+  {
+   "id": 64,
+   "parentCategory": 2,
+   "name": "Noutbuklar"
+  },
+  {
+   "id": 65,
+   "parentCategory": 2,
+   "name": "Monoblok"
+  },
+  {
+   "id": 66,
+   "parentCategory": 2,
+   "name": "Monitorlar"
+  },
+  {
+   "id": 67,
+   "parentCategory": 2,
+   "name": "Kompyuter qurilmalari"
+  },
+  {
+   "id": 68,
+   "parentCategory": 2,
+   "name": "Proektorlar"
+  },
+  {
+   "id": 69,
+   "parentCategory": 2,
+   "name": "Stol usti kompyutelari"
+  },
+  {
+   "id": 70,
+   "parentCategory": 2,
+   "name": "Ofis jihozlari"
+  },
+  {
+   "id": 71,
+   "parentCategory": 2,
+   "name": "Noutbuk uchun sumka va ryukzaklar"
+  },
+  {
+   "id": 72,
+   "parentCategory": 2,
+   "name": "Tizim uskunalari"
+  },
+  {
+   "id": 73,
+   "parentCategory": 2,
+   "name": "Monitorlar uchun kronshteyn"
+  },
+  {
+   "id": 74,
+   "parentCategory": 2,
+   "name": "Videoga olish"
+  },
+  {
+   "id": 75,
+   "parentCategory": 64,
+   "name": "Apple"
+  },
+  {
+   "id": 76,
+   "parentCategory": 64,
+   "name": "Acer"
+  },
+  {
+   "id": 77,
+   "parentCategory": 64,
+   "name": "Asus"
+  },
+  {
+   "id": 78,
+   "parentCategory": 64,
+   "name": "HP"
+  },
+  {
+   "id": 79,
+   "parentCategory": 64,
+   "name": "Lenovo"
+  },
+  {
+   "id": 80,
+   "parentCategory": 64,
+   "name": "Dell"
+  },
+  {
+   "id": 81,
+   "parentCategory": 64,
+   "name": "MSI"
+  },
+  {
+   "id": 82,
+   "parentCategory": 64,
+   "name": "GigeByte"
+  },
+  {
+   "id": 83,
+   "parentCategory": 64,
+   "name": "Dream Machines"
+  },
+  {
+   "id": 84,
+   "parentCategory": 66,
+   "name": "Samsung"
+  },
+  {
+   "id": 85,
+   "parentCategory": 66,
+   "name": "Xiaomi"
+  },
+  {
+   "id": 86,
+   "parentCategory": 66,
+   "name": "LG"
+  },
+  {
+   "id": 87,
+   "parentCategory": 66,
+   "name": "Asus"
+  },
+  {
+   "id": 88,
+   "parentCategory": 66,
+   "name": "HP"
+  },
+  {
+   "id": 89,
+   "parentCategory": 66,
+   "name": "Dell"
+  },
+  {
+   "id": 90,
+   "parentCategory": 66,
+   "name": "Artel"
+  },
+  {
+   "id": 91,
+   "parentCategory": 66,
+   "name": "Avtech"
+  },
+  {
+   "id": 92,
+   "parentCategory": 66,
+   "name": "Ziffler"
+  },
+  {
+   "id": 93,
+   "parentCategory": 67,
+   "name": "Kompyuter uchun quloqchinlar"
+  },
+  {
+   "id": 94,
+   "parentCategory": 67,
+   "name": "Protsessorlar"
+  },
+  {
+   "id": 95,
+   "parentCategory": 67,
+   "name": "Videokartalar"
+  },
+  {
+   "id": 96,
+   "parentCategory": 67,
+   "name": "Ona platalar"
+  },
+  {
+   "id": 97,
+   "parentCategory": 67,
+   "name": "Qattiq diskalar"
+  },
+  {
+   "id": 98,
+   "parentCategory": 67,
+   "name": "Kompyuter sovitish tizimlari"
+  },
+  {
+   "id": 99,
+   "parentCategory": 67,
+   "name": "Operativ xotira"
+  },
+  {
+   "id": 100,
+   "parentCategory": 67,
+   "name": "Kompyuter korpuslari"
+  },
+  {
+   "id": 101,
+   "parentCategory": 67,
+   "name": "Veb-kamera"
+  },
+  {
+   "id": 102,
+   "parentCategory": 67,
+   "name": "Flesh xotiralari"
+  },
+  {
+   "id": 103,
+   "parentCategory": 67,
+   "name": "Klaviatura va Sichqoncha"
+  },
+  {
+   "id": 104,
+   "parentCategory": 67,
+   "name": "Quvvatlanish bloki"
+  },
+  {
+   "id": 105,
+   "parentCategory": 68,
+   "name": "Epson"
+  },
+  {
+   "id": 106,
+   "parentCategory": 68,
+   "name": "Optoma"
+  },
+  {
+   "id": 107,
+   "parentCategory": 68,
+   "name": "Viewsonic"
+  },
+  {
+   "id": 108,
+   "parentCategory": 69,
+   "name": "Hp"
+  },
+  {
+   "id": 109,
+   "parentCategory": 70,
+   "name": "Printerlar va skanerlar"
+  },
+  {
+   "id": 110,
+   "parentCategory": 70,
+   "name": "Printerlar va KFMlar uchunmoslamalar"
+  },
+  {
+   "id": 111,
+   "parentCategory": 71,
+   "name": "Xiaomi"
+  },
+  {
+   "id": 112,
+   "parentCategory": 71,
+   "name": "Asus"
+  },
+  {
+   "id": 113,
+   "parentCategory": 71,
+   "name": "HP"
+  },
+  {
+   "id": 114,
+   "parentCategory": 71,
+   "name": "Lenovo"
+  },
+  {
+   "id": 115,
+   "parentCategory": 71,
+   "name": "Dell"
+  },
+  {
+   "id": 116,
+   "parentCategory": 71,
+   "name": "Rivacase"
+  },
+  {
+   "id": 117,
+   "parentCategory": 71,
+   "name": "Razer"
+  },
+  {
+   "id": 118,
+   "parentCategory": 71,
+   "name": "2E"
+  },
+  {
+   "id": 119,
+   "parentCategory": 71,
+   "name": "Tucano"
+  },
+  {
+   "id": 120,
+   "parentCategory": 72,
+   "name": "Xiaomi"
+  },
+  {
+   "id": 121,
+   "parentCategory": 72,
+   "name": "Asus"
+  },
+  {
+   "id": 122,
+   "parentCategory": 72,
+   "name": "Huawei"
+  },
+  {
+   "id": 123,
+   "parentCategory": 72,
+   "name": "Tenda"
+  },
+  {
+   "id": 124,
+   "parentCategory": 72,
+   "name": "TP-Link"
+  },
+  {
+   "id": 125,
+   "parentCategory": 72,
+   "name": "Airpho"
+  },
+  {
+   "id": 126,
+   "parentCategory": 72,
+   "name": "Zyxel"
+  },
+  {
+   "id": 127,
+   "parentCategory": 72,
+   "name": "Keenetic"
+  },
+  {
+   "id": 128,
+   "parentCategory": 72,
+   "name": "QNAP"
+  },
+  {
+   "id": 129,
+   "parentCategory": 72,
+   "name": "Netis"
+  },
+  {
+   "id": 130,
+   "parentCategory": 73,
+   "name": "Dell"
+  },
+  {
+   "id": 131,
+   "parentCategory": 73,
+   "name": "KSL"
+  },
+  {
+   "id": 132,
+   "parentCategory": 74,
+   "name": "AverMedia"
+  },
+  {
+   "id": 133,
+   "parentCategory": 3,
+   "name": "Televizorlar"
+  },
+  {
+   "id": 134,
+   "parentCategory": 3,
+   "name": "Audio"
+  },
+  {
+   "id": 135,
+   "parentCategory": 3,
+   "name": "Video texnika"
+  },
+  {
+   "id": 136,
+   "parentCategory": 3,
+   "name": "Media Player"
+  },
+  {
+   "id": 137,
+   "parentCategory": 3,
+   "name": "Diktofonlar"
+  },
+  {
+   "id": 138,
+   "parentCategory": 3,
+   "name": "Foto, video"
+  },
+  {
+   "id": 139,
+   "parentCategory": 3,
+   "name": "O'yin konsollari"
+  },
+  {
+   "id": 140,
+   "parentCategory": 133,
+   "name": "Samsung"
+  },
+  {
+   "id": 141,
+   "parentCategory": 133,
+   "name": "Sony"
+  },
+  {
+   "id": 142,
+   "parentCategory": 133,
+   "name": "LG"
+  },
+  {
+   "id": 143,
+   "parentCategory": 133,
+   "name": "Artel"
+  },
+  {
+   "id": 144,
+   "parentCategory": 133,
+   "name": "Ziffler"
+  },
+  {
+   "id": 145,
+   "parentCategory": 133,
+   "name": "Premier"
+  },
+  {
+   "id": 146,
+   "parentCategory": 134,
+   "name": "Mikrofonlar"
+  },
+  {
+   "id": 147,
+   "parentCategory": 134,
+   "name": "Musiqa sistemalari"
+  },
+  {
+   "id": 148,
+   "parentCategory": 134,
+   "name": "Akustika"
+  },
+  {
+   "id": 149,
+   "parentCategory": 135,
+   "name": "Uy kinoteatri"
+  },
+  {
+   "id": 150,
+   "parentCategory": 135,
+   "name": "DVD-pleer"
+  },
+  {
+   "id": 151,
+   "parentCategory": 135,
+   "name": "Xafsizlik kameralari"
+  },
+  {
+   "id": 152,
+   "parentCategory": 136,
+   "name": "Apple"
+  },
+  {
+   "id": 153,
+   "parentCategory": 136,
+   "name": "Xiaomi"
+  },
+  {
+   "id": 154,
+   "parentCategory": 136,
+   "name": "Tanix"
+  },
+  {
+   "id": 155,
+   "parentCategory": 136,
+   "name": "itv box"
+  },
+  {
+   "id": 156,
+   "parentCategory": 137,
+   "name": "Sony"
+  },
+  {
+   "id": 157,
+   "parentCategory": 137,
+   "name": "Cenix"
+  },
+  {
+   "id": 158,
+   "parentCategory": 138,
+   "name": "Foto va video kameralar uchun aksessuarlar"
+  },
+  {
+   "id": 159,
+   "parentCategory": 139,
+   "name": "PlayStation"
+  },
+  {
+   "id": 160,
+   "parentCategory": 139,
+   "name": "Geympadlar"
+  },
+  {
+   "id": 161,
+   "parentCategory": 4,
+   "name": "Geymerlar uchun garnituralar"
+  },
+  {
+   "id": 162,
+   "parentCategory": 4,
+   "name": "Klaviaturalar"
+  },
+  {
+   "id": 163,
+   "parentCategory": 4,
+   "name": "Sichqonchalar"
+  },
+  {
+   "id": 164,
+   "parentCategory": 4,
+   "name": "O'yin uchun kursilar"
+  },
+  {
+   "id": 165,
+   "parentCategory": 4,
+   "name": "Monitor"
+  },
+  {
+   "id": 166,
+   "parentCategory": 161,
+   "name": "Asus"
+  },
+  {
+   "id": 167,
+   "parentCategory": 161,
+   "name": "Logitech"
+  },
+  {
+   "id": 168,
+   "parentCategory": 161,
+   "name": "Edifier"
+  },
+  {
+   "id": 169,
+   "parentCategory": 161,
+   "name": "Plantronics"
+  },
+  {
+   "id": 170,
+   "parentCategory": 161,
+   "name": "HyperX"
+  },
+  {
+   "id": 171,
+   "parentCategory": 161,
+   "name": "SteelSeries"
+  },
+  {
+   "id": 172,
+   "parentCategory": 161,
+   "name": "Razer"
+  },
+  {
+   "id": 173,
+   "parentCategory": 161,
+   "name": "Redragon"
+  },
+  {
+   "id": 174,
+   "parentCategory": 161,
+   "name": "Cougar"
+  },
+  {
+   "id": 175,
+   "parentCategory": 161,
+   "name": "Corsair"
+  },
+  {
+   "id": 176,
+   "parentCategory": 161,
+   "name": "Trust"
+  },
+  {
+   "id": 177,
+   "parentCategory": 161,
+   "name": "AverMedia"
+  },
+  {
+   "id": 178,
+   "parentCategory": 161,
+   "name": "Sharkoon"
+  },
+  {
+   "id": 179,
+   "parentCategory": 162,
+   "name": "Asus"
+  },
+  {
+   "id": 180,
+   "parentCategory": 162,
+   "name": "HP"
+  },
+  {
+   "id": 181,
+   "parentCategory": 162,
+   "name": "Lenovo"
+  },
+  {
+   "id": 182,
+   "parentCategory": 162,
+   "name": "Logitech"
+  },
+  {
+   "id": 183,
+   "parentCategory": 162,
+   "name": "MSI"
+  },
+  {
+   "id": 184,
+   "parentCategory": 162,
+   "name": "HyperX"
+  },
+  {
+   "id": 185,
+   "parentCategory": 162,
+   "name": "SteetlSeries"
+  },
+  {
+   "id": 186,
+   "parentCategory": 162,
+   "name": "Razer"
+  },
+  {
+   "id": 187,
+   "parentCategory": 162,
+   "name": "Redragon"
+  },
+  {
+   "id": 188,
+   "parentCategory": 162,
+   "name": "Cougar"
+  },
+  {
+   "id": 189,
+   "parentCategory": 162,
+   "name": "Corsair"
+  },
+  {
+   "id": 190,
+   "parentCategory": 162,
+   "name": "Ducky"
+  },
+  {
+   "id": 191,
+   "parentCategory": 163,
+   "name": "Asus"
+  },
+  {
+   "id": 192,
+   "parentCategory": 163,
+   "name": "HP"
+  },
+  {
+   "id": 193,
+   "parentCategory": 163,
+   "name": "Lenovo"
+  },
+  {
+   "id": 194,
+   "parentCategory": 163,
+   "name": "Logitech"
+  },
+  {
+   "id": 195,
+   "parentCategory": 163,
+   "name": "MSI"
+  },
+  {
+   "id": 196,
+   "parentCategory": 163,
+   "name": "HyperX"
+  },
+  {
+   "id": 197,
+   "parentCategory": 163,
+   "name": "Cooler Master"
+  },
+  {
+   "id": 198,
+   "parentCategory": 163,
+   "name": "Rapoo"
+  },
+  {
+   "id": 199,
+   "parentCategory": 163,
+   "name": "SteelSeries"
+  },
+  {
+   "id": 200,
+   "parentCategory": 163,
+   "name": "Razer"
+  },
+  {
+   "id": 201,
+   "parentCategory": 163,
+   "name": "Redragon"
+  },
+  {
+   "id": 202,
+   "parentCategory": 163,
+   "name": "2E"
+  },
+  {
+   "id": 203,
+   "parentCategory": 163,
+   "name": "Zowie"
+  },
+  {
+   "id": 204,
+   "parentCategory": 163,
+   "name": "Corasair"
+  },
+  {
+   "id": 205,
+   "parentCategory": 163,
+   "name": "Sven"
+  },
+  {
+   "id": 206,
+   "parentCategory": 163,
+   "name": "Xtrfy"
+  },
+  {
+   "id": 207,
+   "parentCategory": 163,
+   "name": "Trust"
+  },
+  {
+   "id": 208,
+   "parentCategory": 163,
+   "name": "Sharkoon"
+  },
+  {
+   "id": 209,
+   "parentCategory": 164,
+   "name": "Cougar"
+  },
+  {
+   "id": 210,
+   "parentCategory": 164,
+   "name": "2E Gaming"
+  },
+  {
+   "id": 211,
+   "parentCategory": 164,
+   "name": "Xigmatek"
+  },
+  {
+   "id": 212,
+   "parentCategory": 4,
+   "name": "O'yin uchun gilamchalar"
+  },
+  {
+   "id": 213,
+   "parentCategory": 212,
+   "name": "Asus"
+  },
+  {
+   "id": 214,
+   "parentCategory": 212,
+   "name": "HP"
+  },
+  {
+   "id": 215,
+   "parentCategory": 212,
+   "name": "HyperX"
+  },
+  {
+   "id": 216,
+   "parentCategory": 212,
+   "name": "Cooler Master"
+  },
+  {
+   "id": 217,
+   "parentCategory": 212,
+   "name": "SteelSeries"
+  },
+  {
+   "id": 218,
+   "parentCategory": 212,
+   "name": "Razer"
+  },
+  {
+   "id": 219,
+   "parentCategory": 212,
+   "name": "Cougar"
+  },
+  {
+   "id": 220,
+   "parentCategory": 212,
+   "name": "Zowie"
+  },
+  {
+   "id": 221,
+   "parentCategory": 212,
+   "name": "Corsair"
+  },
+  {
+   "id": 222,
+   "parentCategory": 212,
+   "name": "Sharkoon"
+  },
+  {
+   "id": 223,
+   "parentCategory": 165,
+   "name": "GigaByte"
+  },
+  {
+   "id": 224,
+   "parentCategory": 5,
+   "name": "Kir yuvish mashinalari"
+  },
+  {
+   "id": 225,
+   "parentCategory": 5,
+   "name": "Chanyutgich va aksessuarlar"
+  },
+  {
+   "id": 226,
+   "parentCategory": 5,
+   "name": "Iqlim ta'minlovchi qurilmalar"
+  },
+  {
+   "id": 227,
+   "parentCategory": 5,
+   "name": "Dazmollar"
+  },
+  {
+   "id": 228,
+   "parentCategory": 5,
+   "name": "Yorituvchi moslamalar"
+  },
+  {
+   "id": 229,
+   "parentCategory": 5,
+   "name": "Tikuv uskunalari"
+  },
+  {
+   "id": 230,
+   "parentCategory": 5,
+   "name": "Mini moyka"
+  },
+  {
+   "id": 231,
+   "parentCategory": 5,
+   "name": "Tashqi sovutgich"
+  },
+  {
+   "id": 232,
+   "parentCategory": 5,
+   "name": "Suv isitgichlar"
+  },
+  {
+   "id": 233,
+   "parentCategory": 224,
+   "name": "Samsung"
+  },
+  {
+   "id": 234,
+   "parentCategory": 224,
+   "name": "LG"
+  },
+  {
+   "id": 235,
+   "parentCategory": 224,
+   "name": "Hoffman"
+  },
+  {
+   "id": 236,
+   "parentCategory": 224,
+   "name": "Artel"
+  },
+  {
+   "id": 237,
+   "parentCategory": 224,
+   "name": "Goodwell"
+  },
+  {
+   "id": 238,
+   "parentCategory": 224,
+   "name": "Indesit"
+  },
+  {
+   "id": 239,
+   "parentCategory": 224,
+   "name": "Whirepool"
+  },
+  {
+   "id": 240,
+   "parentCategory": 224,
+   "name": "Ziffler"
+  },
+  {
+   "id": 241,
+   "parentCategory": 224,
+   "name": "Immer"
+  },
+  {
+   "id": 242,
+   "parentCategory": 224,
+   "name": "Muller"
+  },
+  {
+   "id": 243,
+   "parentCategory": 225,
+   "name": "Samsung"
+  },
+  {
+   "id": 244,
+   "parentCategory": 225,
+   "name": "LG"
+  },
+  {
+   "id": 245,
+   "parentCategory": 225,
+   "name": "Artel"
+  },
+  {
+   "id": 246,
+   "parentCategory": 225,
+   "name": "Welkin"
+  },
+  {
+   "id": 247,
+   "parentCategory": 226,
+   "name": "Havoni namlantiruvchi qurilmalar"
+  },
+  {
+   "id": 248,
+   "parentCategory": 226,
+   "name": "Konditsionerlar"
+  },
+  {
+   "id": 249,
+   "parentCategory": 226,
+   "name": "Isitish qurilmalari va kaminlar"
+  },
+  {
+   "id": 250,
+   "parentCategory": 226,
+   "name": "Ventilyatorlar"
+  },
+  {
+   "id": 251,
+   "parentCategory": 226,
+   "name": "Havo tozalagichlar"
+  },
+  {
+   "id": 252,
+   "parentCategory": 227,
+   "name": "Philips"
+  },
+  {
+   "id": 253,
+   "parentCategory": 227,
+   "name": "Polaris"
+  },
+  {
+   "id": 254,
+   "parentCategory": 227,
+   "name": "Braun"
+  },
+  {
+   "id": 255,
+   "parentCategory": 227,
+   "name": "Panasonic"
+  },
+  {
+   "id": 256,
+   "parentCategory": 227,
+   "name": "Tefal"
+  },
+  {
+   "id": 257,
+   "parentCategory": 227,
+   "name": "Hoffman"
+  },
+  {
+   "id": 258,
+   "parentCategory": 227,
+   "name": "Artel"
+  },
+  {
+   "id": 259,
+   "parentCategory": 227,
+   "name": "Geepas"
+  },
+  {
+   "id": 260,
+   "parentCategory": 227,
+   "name": "Shivaki"
+  },
+  {
+   "id": 261,
+   "parentCategory": 227,
+   "name": "Rowenta"
+  },
+  {
+   "id": 262,
+   "parentCategory": 227,
+   "name": "Vitek"
+  },
+  {
+   "id": 263,
+   "parentCategory": 227,
+   "name": "Maxwell"
+  },
+  {
+   "id": 264,
+   "parentCategory": 228,
+   "name": "Xiaomi"
+  },
+  {
+   "id": 265,
+   "parentCategory": 229,
+   "name": "Tikuv mashinalari"
+  },
+  {
+   "id": 266,
+   "parentCategory": 229,
+   "name": "Overlok"
+  },
+  {
+   "id": 267,
+   "parentCategory": 230,
+   "name": "Suv nasoslari"
+  },
+  {
+   "id": 268,
+   "parentCategory": 230,
+   "name": "Pardozlagich"
+  },
+  {
+   "id": 269,
+   "parentCategory": 230,
+   "name": "Changyutgichlar"
+  },
+  {
+   "id": 270,
+   "parentCategory": 230,
+   "name": "Yuqori bosim uskunalari"
+  },
+  {
+   "id": 271,
+   "parentCategory": 230,
+   "name": "Parli damollar"
+  },
+  {
+   "id": 272,
+   "parentCategory": 231,
+   "name": "Artel"
+  },
+  {
+   "id": 273,
+   "parentCategory": 232,
+   "name": "Zanussi"
+  },
+  {
+   "id": 274,
+   "parentCategory": 232,
+   "name": "Welkin"
+  },
+  {
+   "id": 275,
+   "parentCategory": 232,
+   "name": "Warmhouse"
+  },
+  {
+   "id": 276,
+   "parentCategory": 232,
+   "name": "Tenko"
+  },
+  {
+   "id": 277,
+   "parentCategory": 232,
+   "name": "Apamet"
+  },
+  {
+   "id": 278,
+   "parentCategory": 232,
+   "name": "Evan"
+  }
+ ]
+
+}

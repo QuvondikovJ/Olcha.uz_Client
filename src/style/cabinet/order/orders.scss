@@ -1,0 +1,148 @@
+.orders_comp {
+  margin-bottom: 20px;
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    .order_inner {
+      display: flex;
+
+      .order_item:last-child {
+        max-width: 75%;
+        width: 100%;
+
+        .order_block {
+          max-width: 900px;
+          width: 100%;
+          height: auto;
+          padding: 5px 15px;
+          background-color: var(--path_bg);
+          border-radius: 6px;
+          display: flex;
+          align-items: center;
+          margin-bottom: 50px;
+
+          .orders_btn {
+            padding: 6px 12px;
+            border-radius: 5px;
+            border: 0;
+            outline: none;
+            color: var(--new_products);
+            margin: 0 10px;
+            background-color: transparent;
+            transition: color .2s linear;
+          }
+
+          .orders_btn.active {
+            background-color: var(--body_bg);
+          }
+
+          .orders_btn.active:hover {
+            color: var(--new_products);
+          }
+
+          .orders_btn:hover {
+            color: #eb1537;
+          }
+
+        }
+
+        .no_orders {
+          padding: 50px 0;
+
+          .order_icon {
+            width: 150px;
+            height: 150px;
+            display: block;
+            fill: #9FAAB7;
+            margin: 0 auto;
+          }
+
+          .order_title {
+            font-size: 18px;
+            color: #9FAAB7;
+            text-align: center;
+            margin-top: 20px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1015px) {
+  .orders_comp .container .order_inner .order_item:last-child {
+
+    .order_block {
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+
+      .orders_btn {
+        margin-bottom: 5px;
+      }
+
+    }
+
+  }
+}
+
+
+@media (max-width: 990px) {
+
+  .orders_comp .container {
+    max-width: 730px;
+
+    .order_inner .order_item:last-child .order_block {
+      padding: 5px 10px;
+
+      .orders_btn {
+        padding: 6px;
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+
+  .orders_comp .container {
+    max-width: 540px;
+    margin-top: 15px;
+
+    .order_inner {
+      display: block;
+
+      .order_item:last-child {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .orders_comp .container {
+    max-width: 100%;
+
+    .order_inner .order_item:last-child {
+
+      .no_orders {
+        padding: 25px 0;
+
+        .order_icon {
+          width: 100px;
+          height: 100px;
+        }
+
+        .order_title {
+          font-size: 16px;
+        }
+      }
+
+
+    }
+  }
+}

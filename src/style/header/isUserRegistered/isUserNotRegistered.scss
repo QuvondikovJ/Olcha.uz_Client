@@ -1,0 +1,159 @@
+.access {
+  position: relative;
+
+  .access_btn {
+    width: 95px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 12px;
+    border: 0;
+    background-color: transparent;
+    border-radius: 6px;
+
+    i {
+      font-size: 18px;
+      color: var(--login_color);
+    }
+
+    .user {
+      font-size: 16px;
+      color: var(--login_color);
+      font-weight: 400;
+    }
+
+  }
+
+  .access_btn:hover {
+    background-color: var(--login_bg);
+
+    i, .user {
+      color: #EB1537;
+    }
+  }
+
+  .access_vis {
+    width: 230px;
+    height: 140px;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    z-index: 10;
+    background-color: var(--search_bg);
+    border-radius: 6px;
+    padding: 15px 0;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1);
+
+    .text {
+      color: #9FAAB7;
+      font-size: 12px;
+      margin-bottom: 5px;
+      padding-left: 15px;
+    }
+
+    .login a {
+      display: flex;
+      align-items: center;
+      padding: 8px 0 8px 15px;
+
+      .login_icon {
+        display: block;
+        width: 20px;
+        height: 20px;
+        fill: #a19d9d;
+      }
+
+      .login_text {
+        font-size: 15px;
+        color: var(--new_products);
+        margin: 0 0 0 12px;
+
+      }
+    }
+
+    .registration a {
+      display: flex;
+      align-items: center;
+      padding: 8px 0 8px 15px;
+
+
+      .registration_icon {
+        display: block;
+        width: 20px;
+        height: 20px;
+        fill: #a19d9d;
+      }
+
+      .registration_text {
+        font-size: 15px;
+        color: var(--new_products);
+        padding-top: 4px;
+        margin: 0 0 0 12px;
+      }
+    }
+
+    .login:hover,
+    .registration:hover {
+      background-color: var(--navbar_checkbox_border);
+    }
+
+    .registration:active {
+      background-color: #eb1537;
+
+      .registration_icon {
+        fill: #fff;
+      }
+
+      .registration_text {
+        color: #fff;
+      }
+    }
+
+    .login:active {
+      background-color: #eb1537;
+
+      .login_icon {
+        fill: #fff;
+      }
+
+      .login_text {
+        color: #fff;
+      }
+    }
+
+
+  }
+}
+
+@media (max-width: 990px) {
+  .access {
+
+    .access_btn {
+
+      width: 40px;
+      height: 40px;
+
+      .user {
+        display: none;
+      }
+
+    }
+
+    .access_vis {
+      left: -220%
+    }
+
+  }
+}
+@media (max-width: 770px) {
+
+  .access .access_btn{
+    width: 45px;
+    height: 40px;
+    i{
+      font-size: 23px;
+    }
+  }
+
+}

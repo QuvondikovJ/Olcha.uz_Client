@@ -1,0 +1,154 @@
+.product_temp {
+  font-family: sans-serif;
+
+  .product_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    img {
+      width: 180px;
+      height: auto;
+    }
+  }
+
+  .product_category {
+    font-size: 14px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #9FAAB7;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+  }
+
+  .product_name {
+    color: var(--product_name);
+    overflow: hidden;
+    height: 45px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    line-height: 1.3;
+  }
+
+  .star {
+    display: flex;
+    align-items: center;
+    height: 18px;
+
+    .star_item {
+      width: 18px;
+      height: 18px;
+      fill: grey;
+      margin-left: 0;
+      display: block;
+    }
+
+  }
+
+  .rassrochka {
+    color: #9FAAB7;
+    font-size: 13px;
+    padding-bottom: 10px;
+    line-height: 1;
+    height: 24px;
+    margin-bottom: 0;
+
+  }
+
+  .discount {
+    text-decoration: line-through;
+    color: #eb1537;
+    font-size: 13px;
+    padding-bottom: 10px;
+    line-height: 1;
+    height: 24px;
+    margin-bottom: 0;
+
+  }
+
+  .price {
+    font-weight: 700;
+    min-height: 18px;
+    font-size: 19px;
+    margin-bottom: 10px;
+    line-height: 1;
+    color: var(--product_name);
+  }
+
+  .heart {
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+    i {
+      font-size: 24px;
+      color: #333;
+      transition: color .2s linear;
+    }
+  }
+
+  .heart:hover i {
+    color: #eb1537;
+  }
+
+
+  .delivery {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #333333;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 5;
+
+    .delivery_icon {
+      fill: #fff;
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .product_category:hover,
+  .product_name:hover {
+    color: #eb1537;
+  }
+}
+
+@media (max-width: 1230px) {
+  .product_temp {
+    .product_img img {
+      width: 160px;
+    }
+
+    .product_name {
+      font-size: 14px;
+    }
+
+    .product_category {
+      font-size: 13px;
+    }
+
+    .price {
+      font-size: 18px;
+    }
+  }
+}

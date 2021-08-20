@@ -1,0 +1,232 @@
+.comment_comp {
+  width: 100%;
+  max-width: 1230px;
+
+  .comment_inner {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 10px;
+
+    .title_block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        font-size: 26px;
+        font-weight: 700;
+        font-family: sans-serif;
+        color: var(--new_products);
+        margin-bottom: 0;
+
+      }
+
+      .comment_btn {
+        padding: 7.5px 10px;
+        outline: none;
+        border: 0;
+        border-radius: 6px;
+        background-color: #00cf1a;
+        display: flex;
+        align-items: center;
+        transition: background-color .2s linear;
+
+        .edit_icon {
+          width: 22px;
+          height: 22px;
+          display: block;
+          fill: #fff;
+        }
+
+        span {
+          font-size: 15px;
+          color: #fff;
+          margin-bottom: 0;
+          margin-left: 5px;
+          font-family: sans-serif;
+          font-weight: 500;
+        }
+
+      }
+
+      .comment_btn:hover {
+        background-color: darken(#00cf1a, 10%);
+      }
+
+      .comment_btn:active {
+        transform: translate3d(0, 1px, 0);
+      }
+    }
+
+    /*  Empty comment block  */
+    .empty_comment_block {
+
+      .comment_icon {
+        width: 150px;
+        height: 150px;
+        display: block;
+        fill: #9FAAB7;
+        margin: 45px auto;
+      }
+
+      p {
+        font-size: 26px;
+        color: #9FAAB7;
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+
+    /*  If there are comments  */
+    .comment_block {
+      margin-top: 15px;
+
+      .rating_block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .star_icon {
+          display: block;
+          width: 18px;
+          height: 18px;
+          fill: rgb(255, 124, 11);
+        }
+
+        .star_count {
+          font-size: 18px;
+          font-weight: 700;
+          color: var(--new_products);
+          margin-left: 7.5px;
+          margin-bottom: 0;
+          font-family: sans-serif;
+        }
+
+        .line {
+          width: 2px;
+          height: 18px;
+          border-radius: 2px;
+          background-color: #9FAAB7;
+          margin: 0 7.5px;
+          display: block;
+        }
+
+        .comment_count {
+          font-size: 18px;
+          color: #9FAAB7;
+          font-weight: 700;
+          margin-bottom: 0;
+          font-family: sans-serif;
+        }
+      }
+
+      .comment_item {
+        padding: 16px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        background-color: var(--comment_bg);
+
+        .sup_title_block {
+          display: flex;
+          align-items: center;
+
+          .user_name {
+            font-size: 17px;
+            font-family: sans-serif;
+            color: var(--new_products);
+            font-weight: 600;
+            margin-bottom: 0;
+          }
+
+          .comment_date {
+            font-size: 16.5px;
+            margin-left: 15px;
+            color: #9FAAB7;
+            font-weight: 600;
+          }
+        }
+
+        .icon_block {
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+
+          .star_icon {
+            display: block;
+            width: 16px;
+            height: 16px;
+            fill: rgb(255, 124, 11);
+          }
+        }
+
+        .comment_text {
+          font-size: 15px;
+          color: var(--product_name);
+          margin-bottom: 0;
+          line-height: 1.5;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 990px) {
+
+  .comment_comp {
+    max-width: 730px;
+    margin-right: auto;
+
+    .comment_inner {
+      max-width: 600px;
+    }
+
+  }
+
+}
+
+@media (max-width: 770px) {
+
+  .comment_comp {
+    max-width: 540px;
+
+    .comment_inner {
+      max-width: 100%;
+    }
+
+  }
+
+}
+
+@media (max-width: 575px) {
+  .comment_comp {
+    max-width: 100%;
+
+    .comment_inner {
+      padding: 0;
+
+      .empty_comment_block p{
+        font-size: 18px;
+      }
+
+      .comment_block .comment_item .sup_title_block {
+        flex-wrap: wrap;
+
+
+        .user_name {
+          margin-right: 15px;
+        }
+
+        .comment_date {
+          margin-left: 0;
+        }
+
+      }
+
+    }
+  }
+}

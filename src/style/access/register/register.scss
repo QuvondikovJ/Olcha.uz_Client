@@ -1,0 +1,57 @@
+.register {
+  width: 100%;
+  height: 550px;
+  background-color: var(--search_bg);
+
+  .container {
+    width: 100%;
+    height: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 80px 15px;
+
+    /* Register Block */
+    .register_block {
+      width: 100%;
+      max-width: 520px;
+      height: 320px;
+      padding: 36px;
+      margin: 0 auto;
+      border-radius: 6px;
+      box-shadow: 0 0 4px 1px rgba(0, 0, 0, .2);
+      background-color: var(--body_bg);
+
+    }
+  }
+}
+
+@media (max-width: 990px) {
+
+  .register .container {
+    max-width: 730px;
+  }
+}
+
+@media (max-width: 770px) {
+
+  .register .container {
+    max-width: 540px;
+
+    .register_block {
+      max-width: 510px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+
+  .register .container {
+
+    .register_block {
+      max-width: 100%;
+      padding: 20px;
+    }
+
+
+  }
+}

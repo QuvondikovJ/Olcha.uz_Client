@@ -1,0 +1,145 @@
+.detailed_about_product {
+  .title {
+    font-size: 22px!important;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--new_products);
+  }
+
+  .inner_block {
+    display: flex;
+    align-items: flex-start;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+    span:first-child {
+      width: 150px;
+      color: #9FAAB7;
+      margin-bottom: 0;
+    }
+
+    span:last-child {
+      width: 190px;
+      padding-left: 10px;
+      color: var(--product_name);
+      margin-bottom: 0;
+    }
+  }
+
+  /*  About delivery  */
+  .about_delivery {
+    .title {
+      font-size: 26px!important;
+      margin-bottom: 8px;
+    }
+
+    .delivery_item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 5px;
+
+      span:first-child {
+        width: 160px;
+        font-size: 15px;
+        color: #9FAAB7;
+        margin-bottom: 0;
+      }
+
+      span:last-child {
+        width: 150px;
+        font-size: 15px;
+        color: var(--product_name);
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .total_cash {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid var(--navbar_border);
+    border-bottom: 1px solid var(--navbar_border);
+    display: flex;
+    align-items: center;
+
+    span:first-child {
+      width: 160px;
+      font-size: 15px;
+      margin-bottom: 0;
+      color: var(--product_name);
+    }
+
+    span:last-child {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--new_products);
+      margin-bottom: 0;
+    }
+  }
+
+  /*  order rules  */
+  .order_rules {
+    font-size: 12px;
+    color: var(--product_name);
+    margin-bottom: 15px;
+
+    a {
+      text-decoration: none;
+      color: #eb1537;
+      margin: 0 5px;
+    }
+  }
+
+  .order_btn {
+    width: 100%;
+    height: 40px;
+    background-color: #eb1537;
+    outline: none;
+    border: 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    transition: background-color .1s linear;
+  }
+
+  .order_btn:hover {
+    background-color: darken(#eb1537, 10);
+  }
+
+  .order_btn:active {
+    transform: scale(.99);
+    background-color: darken(#eb1537, 10);
+  }
+
+}
+
+@media (max-width: 575px) {
+  .detailed_about_product {
+    .title {
+      font-size: 18px !important;
+    }
+
+    .inner_block span {
+      font-size: 14px;
+    }
+
+    .about_delivery {
+      .title {
+        font-size: 22px !important;
+      }
+    }
+
+    .total_cash {
+      span:first-child {
+        width: 160px;
+      }
+
+      span:last-child {
+        font-size: 15px;
+        min-width: 110px;
+      }
+    }
+    .order_btn{
+      font-size: 13px;
+    }
+  }
+}

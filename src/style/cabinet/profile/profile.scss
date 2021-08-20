@@ -1,0 +1,351 @@
+.profile {
+  margin-bottom: 60px;
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+
+    .profile_inner {
+      display: flex;
+
+      .profile_item:nth-child(2) {
+        display: flex;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+
+        .user_data_keys {
+          min-width: 200px;
+          height: 340px;
+
+          p {
+            margin: 0;
+            padding: 12px;
+            font-size: 15px;
+            color: #9FAAB7;
+            background-color: var(--login_bg);
+          }
+
+          p:first-child {
+            border-radius: 6px 6px 0 0;
+          }
+
+          p:nth-child(7) {
+            border-radius: 0 0 6px 6px;
+          }
+
+          a {
+            text-decoration: none;
+
+            .profile_edit {
+              padding: 8px 10px;
+              border-radius: 6px;
+              display: flex;
+              align-items: center;
+              outline: none;
+              border: 1px solid #ced4da;
+              background-color: var(--search_bg);
+              margin-top: 15px;
+
+              .edit_icon {
+                display: block;
+                width: 22px;
+                height: 22px;
+                fill: var(--registered_icons);
+              }
+
+              span {
+                font-size: 15px;
+                color: var(--product_name);
+                margin-left: 10px;
+              }
+            }
+          }
+
+          a .profile_edit:hover {
+            border-color: #a19d9d;
+          }
+
+          a .profile_edit:active {
+            background-color: #eb1537;
+            border-color: transparent;
+
+            .edit_icon {
+              fill: #fff;
+            }
+
+            span {
+              color: #fff;
+            }
+          }
+
+        }
+
+        .user_data_values {
+          max-width: 400px;
+          width: 100%;
+          border-radius: 6px;
+          background-color: var(--body_bg);
+          height: 340px;
+
+          p {
+            margin: 0;
+            padding: 12px;
+            font-size: 15px;
+            color: var(--new_products);
+          }
+
+        }
+      }
+
+      .profile_item:last-child {
+        .balance_block {
+          padding: 16px;
+          margin-bottom: 15px;
+          border-radius: 6px;
+          background-color: var(--balance_block_bg);
+
+          .title {
+            font-size: 18px;
+            color: var(--new_products);
+            font-weight: 700;
+            margin-bottom: 8px;
+          }
+
+          .text {
+            font-size: 15px;
+            color: var(--product_name);
+            margin-bottom: 0;
+          }
+
+        }
+
+        .offer_block {
+          background-color: var(--offer_block_bg);
+          border-radius: 6px;
+          padding: 16px 16px;
+          margin-bottom: 15px;
+
+          .title {
+            font-size: 18px;
+            color: var(--new_products);
+            font-weight: 700;
+            margin-bottom: 8px;
+          }
+
+          .text {
+            font-size: 15px;
+            color: var(--product_name);
+            margin-bottom: 0;
+          }
+
+          .copy {
+            margin-top: 20px;
+            display: flex;
+
+            .copy_text {
+              width: 220px;
+              font-size: 13px;
+              color: var(--product_name);
+              border-radius: 4px;
+              padding: 5px;
+              background-color: var(--search_border);
+              outline: none;
+              border: 0;
+            }
+
+            .copy_btn {
+              height: 30px;
+              outline: none;
+              border: 0;
+              border-radius: 5px;
+              background-color: #eb1537;
+              padding: 0 12px;
+              margin-left: 10px;
+              color: #fff;
+              font-size: 13px;
+            }
+          }
+
+          .copy_btn:hover {
+            background-color: darken(#eb1537, 8%);
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 1230px) {
+
+  .profile .container .profile_inner {
+
+    .profile_item:nth-child(2) {
+      width: 50%;
+
+      .user_data_keys {
+        width: 33.33333%;
+        min-width: 160px;
+      }
+
+      .user_data_values {
+        max-width: 66%;
+        min-width: 200px;
+
+      }
+    }
+
+
+    .profile_item:last-child {
+      max-width: 26%;
+      width: 100%;
+      min-width: 280px;
+    }
+
+  }
+}
+
+@media (max-width: 990px) {
+
+  .profile .container {
+    max-width: 730px;
+
+    .profile_inner {
+
+
+      .profile_item:nth-child(2) {
+        align-items: flex-start;
+
+        .user_data_keys {
+          min-width: 150px;
+        }
+
+        .user_data_values {
+          min-width: 160px;
+        }
+
+      }
+
+
+      .profile_item:last-child {
+        max-width: 26%;
+        width: 100%;
+        min-width: 170px;
+
+        .balance_block {
+          padding: 6px;
+
+          .title {
+            font-size: 16px;
+          }
+        }
+
+        .offer_block {
+          padding: 6px;
+
+          .title {
+            font-size: 16px;
+          }
+
+          .copy {
+            display: block;
+
+            .copy_text {
+              width: 100%;
+            }
+
+            .copy_btn {
+              margin-left: 0;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 770px) {
+
+  .profile .container {
+
+    max-width: 540px;
+
+    .profile_inner {
+      display: block;
+
+      .profile_item:nth-child(2) {
+        width: 100%;
+        max-width: 100%;
+
+
+      }
+
+      .profile_item:last-child {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+        margin-top: 60px;
+
+        .balance_block {
+          padding: 16px;
+
+          .title {
+            font-size: 18px;
+          }
+        }
+
+        .offer_block {
+          padding: 16px;
+
+          .title {
+            font-size: 18px;
+          }
+
+          .copy {
+            display: flex;
+            align-items: center;
+
+            .copy_text {
+              width: 100%;
+            }
+
+            .copy_btn {
+              margin-left: 10px;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+
+  .profile .container {
+
+    .profile_inner {
+
+      .profile_item:nth-child(2) {
+
+        .user_data_keys {
+          min-width: 140px;
+
+          p {
+            padding: 12px 6px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,130 @@
+.address_comp {
+  margin-bottom: 60px;
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .address_inner {
+      width: 100%;
+      //max-width: 900px;
+      background-color: var(--body_bg);
+      display: flex;
+
+      .address_item:last-child {
+        width: 75%;
+        padding-left: 15px;
+
+        a {
+          text-decoration: none;
+          display: block;
+          width: 150px;
+
+          .address_add {
+            width: 150px;
+            height: 40px;
+            background-color: #eb1537;
+            font-size: 16px;
+            color: #fff;
+            outline: none;
+            border: 0;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            span {
+              font-size: 22px;
+              color: #fff;
+            }
+          }
+        }
+
+        a .address_add:hover {
+          background-color: darken(#eb1537, 10%);
+        }
+
+        a .address_add:active {
+          background-color: darken(#eb1537, 10%);
+          transform: translate3d(0, 1px, 0);
+        }
+
+        div {
+          width: 100%;
+          text-align: center;
+
+          .gps_icon {
+            display: block;
+            width: 180px;
+            height: 180px;
+            margin: 50px auto 20px;
+            fill: #9FAAB7;
+          }
+
+          .title {
+            font-size: 26px;
+            color: #9FAAB7;
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+
+          .text {
+            font-size: 16px;
+            color: #9FAAB7;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .address_comp .container {
+    max-width: 730px;
+
+    .address_inner .address_item:last-child div {
+
+      .title {
+        font-size: 20px;
+      }
+
+      .text {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .address_comp .container {
+    max-width: 540px;
+
+    .address_inner {
+      display: block;
+    }
+
+    .address_item:last-child {
+      margin-top: 20px;
+      width: 100% !important;
+
+      div {
+
+        .title {
+          font-size: 20px;
+        }
+
+        .text {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

@@ -1,0 +1,86 @@
+.departments_in_cabinet {
+  width: 300px;
+  padding-right: 15px;
+
+  a {
+    text-decoration: none;
+
+    .department {
+      padding: 10px 10px 15px;
+      margin-bottom: 5px;
+      background-color: var(--body_bg);
+      display: flex;
+      align-items: center;
+      border-radius: 6px;
+
+      .department_icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: var(--registered_icons);
+      }
+
+      span {
+        font-size: 15px;
+        color: var(--new_products);
+        margin-left: 10px;
+        width: 185px;
+      }
+
+    }
+
+    .department.active {
+      background-color: var(--login_bg) !important;
+
+      span {
+        color: #eb1537 !important;
+      }
+
+      .department_icon {
+        fill: #eb1537;
+      }
+    }
+
+  }
+
+  a .department:hover {
+    background-color: var(--login_bg);
+  }
+
+  a .department:active {
+    background-color: #eb1537;
+
+    .department_icon {
+      fill: #fff;
+    }
+
+    span {
+      color: #fff;
+    }
+  }
+
+
+}
+
+@media (max-width: 990px) {
+
+  .departments_in_cabinet {
+
+    width: 100%;
+    max-width: 220px;
+
+  }
+}
+
+@media (max-width: 770px) {
+  .departments_in_cabinet {
+    max-width: 100%;
+    width: 100%;
+    padding-right: 0;
+
+
+    a .department span {
+      width: 100%;
+    }
+  }
+}

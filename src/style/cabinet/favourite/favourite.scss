@@ -1,0 +1,44 @@
+.favourite_comp {
+  margin-bottom: 60px;
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .favourite_inner {
+      display: flex;
+
+      .favourite_item:last-child {
+        width: 100%;
+        max-width: 75%;
+
+        }
+
+      }
+
+    }
+
+  }
+
+@media (max-width: 990px) {
+  .favourite_comp .container{
+    max-width: 730px;
+  }
+}
+@media (max-width: 770px) {
+  .favourite_comp .container{
+    max-width: 540px;
+
+    .favourite_inner{
+      display: block;
+
+      .favourite_item:last-child{
+        max-width: 100%;
+      }
+
+    }
+
+  }
+}

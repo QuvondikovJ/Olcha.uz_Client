@@ -1,0 +1,122 @@
+.authorization {
+  background-color: var(--search_bg);
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 60px 15px;
+
+    .authorization_block {
+      width: 100%;
+      max-width: 320px;
+      height: 500px;
+      padding: 36px;
+      margin: 0 auto;
+      box-shadow: 0 0 4px 1px rgba(0, 0, 0, .2);
+      border-radius: 6px;
+      background-color: var(--body_bg);
+
+      /* Remember password */
+      .remember_password {
+        margin-bottom: 30px;
+        margin-top: 20px;
+
+        input {
+          border-color: var(--path_color);
+          background-color: var(--search_bg);
+          cursor: pointer;
+        }
+
+        input:checked {
+          background-color: #eb1537;
+        }
+
+        label {
+          margin-left: 15px;
+          color: var(--product_name);
+          font-size: 15px;
+          cursor: pointer;
+        }
+      }
+
+
+      /* Btn register */
+      .register_link {
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: block;
+
+        .btn_register {
+          width: 100%;
+          background-color: var(--search_bg);
+          color: var(--new_products);
+          outline: none;
+          border: 1px solid var(--search_border);
+          border-radius: 5px;
+          height: 40px;
+        }
+      }
+
+      .register_link:hover {
+        .btn_register:hover {
+          border-color: #111;
+        }
+      }
+
+      .register_link:active {
+
+        .btn_register:active {
+          background-color: #eb1537;
+          color: #fff;
+          border-color: #fff;
+        }
+      }
+
+      /* Restore password */
+      .restore_password {
+        font-size: 15px;
+        color: #9FAAB7;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        background-color: transparent;
+      }
+
+      .restore_password:hover {
+        color: #eb1537;
+        text-decoration: underline;
+      }
+
+
+    }
+
+  }
+}
+
+@media (max-width: 990px) {
+  .authorization .container {
+    max-width: 730px;
+  }
+}
+
+@media (max-width: 770px) {
+  .authorization .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 360px) {
+  .authorization .container {
+
+    .authorization_block {
+      max-width: 100%;
+      padding: 20px;
+    }
+
+  }
+}

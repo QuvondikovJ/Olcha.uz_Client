@@ -1,0 +1,23 @@
+.cabinet {
+  margin-bottom: 60px;
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+
+  }
+
+}
+@media (max-width: 990px) {
+  .cabinet .container{
+    max-width: 730px;
+  }
+}
+@media (max-width: 770px) {
+  .cabinet .container{
+    max-width: 540px;
+  }
+}

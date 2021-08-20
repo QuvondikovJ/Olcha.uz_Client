@@ -1,0 +1,128 @@
+.notification_comp {
+  margin-bottom: 60px;
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .notification_inner {
+      display: flex;
+
+      .notification_item:last-child {
+        width: 100%;
+        max-width: 900px;
+
+        .title {
+          font-size: 26px;
+          font-weight: 700;
+          color: var(--new_products);
+          margin-bottom: 20px;
+        }
+
+        .notification_icon {
+          width: 180px;
+          height: 180px;
+          display: block;
+          margin: 50px auto 20px;
+          fill: #9FAAB7;
+        }
+
+        .text {
+          font-size: 18px;
+          color: #9FAAB7;
+          text-align: center;
+        }
+
+        .notification_block {
+          width: 100%;
+          max-width: 60%;
+          padding: 36px 36px 10px;
+          background-color: #ffefd3;
+          margin-bottom: 20px;
+          border-radius: 10px;
+
+          .notification_text {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.4;
+            margin-bottom: 25px;
+          }
+
+          .date_block {
+            display: flex;
+            justify-content: space-between;
+
+            .date {
+              font-size: 15px;
+              color: #464c53;
+              margin-right: 15px;
+              font-weight: 500;
+              font-family: 'Roboto', sans-serif;
+            }
+
+            div {
+              display: flex;
+              height: 20px;
+              cursor: pointer;
+
+              .delete_icon {
+                width: 20px;
+                height: 20px;
+                display: block;
+                fill: #9FAAB7;
+              }
+
+              span {
+                font-size: 15px;
+                margin-left: 10px;
+                color: #9FAAB7;
+                margin-bottom: 0 !important;
+              }
+            }
+
+            div:hover {
+              .delete_icon {
+                fill: #eb1537;
+              }
+
+              span {
+                color: #eb1537;
+              }
+            }
+            div:active{
+              transform: translate3d(0,1px,0);
+            }
+
+          }
+        }
+
+
+      }
+    }
+
+  }
+}
+
+@media (max-width: 990px) {
+  .notification_comp .container {
+    max-width: 730px;
+  }
+}
+
+@media (max-width: 770px) {
+  .notification_comp .container {
+    max-width: 540px;
+
+    .notification_inner {
+      display: block;
+
+      .notification_item:last-child {
+        margin-top: 20px;
+      }
+
+    }
+
+  }
+}

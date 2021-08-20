@@ -1,0 +1,120 @@
+.added_addresses {
+  width: 100%;
+  max-width: 440px;
+  padding: 16px;
+  margin-bottom: 25px;
+  background-color: var(--login_bg);
+  border-radius: 10px;
+  border: 1px solid var(--search_border);
+  text-align: left!important;
+
+  .address_title {
+    font-size: 16px;
+    color: var(--new_products);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .address_text {
+    font-size: 15px;
+    color: var(--product_name);
+    margin-bottom: 0;
+  }
+
+  .btn_group {
+    margin-top: 15px;
+    display: flex;
+
+    .standard_btn {
+      width: 250px;
+      height: 40px;
+      outline: none;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      font-size: 15px;
+      color: var(--new_products);
+      background-color: var(--body_bg);
+      margin-right: 8px;
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
+      transition: background-color .2s linear;
+    }
+
+    .standard_btn:hover,
+    .edit:hover,
+    .delete:hover {
+      border-color: #9FAAB7;
+    }
+
+    .standard_btn:active {
+      background-color: #eb1537;
+      color: #fff;
+    }
+
+    .standarded_btn {
+      width: 105px;
+      height: 40px;
+      border-radius: 6px;
+      background-color: #bd102c;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      outline: none;
+      border: 0;
+      margin-right: 8px;
+      padding: 0 6px;
+
+      .standarded_icon{
+        display: block;
+        width: 18px;
+        height: 18px;
+        fill: #fff;
+      }
+
+      span{
+        font-size: 15px;
+      }
+    }
+
+    .edit, .delete {
+      width: 40px;
+      height: 40px;
+      outline: none;
+      border: 1px solid transparent;
+      background-color: var(--body_bg);
+      border-radius: 6px;
+      margin-right: 8px;
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 15%), 0 1px 1px rgb(0 0 0 / 8%);
+      transition: background-color .2s linear;
+    }
+
+    .edit .edit_icon,
+    .delete .delete_icon {
+      display: block;
+      width: 22px;
+      height: 22px;
+      margin: 0 auto;
+      transition: fill .2s linear;
+    }
+
+    .edit .edit_icon {
+      fill: #9FAAB7;
+      margin-top: -5px;
+      margin-left: 5px;
+    }
+
+    .delete .delete_icon {
+      fill: #eb1537;
+    }
+
+    .edit:active, .delete:active {
+      background-color: #eb1537;
+
+      .edit_icon,
+      .delete_icon {
+        fill: #fff;
+      }
+    }
+
+  }
+}

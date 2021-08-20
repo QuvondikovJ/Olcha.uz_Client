@@ -1,0 +1,124 @@
+.why_cherry_uz {
+  margin: 25px 0 45px;
+
+  .container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--new_products);
+      margin-bottom: 15px;
+    }
+
+    .text {
+      margin-bottom: 15px;
+      color: var(--product_name);
+      font-size: 15px;
+      font-family: sans-serif;
+      line-height: 1.6;
+    }
+
+    .empty_text {
+      padding: 10px 0;
+    }
+
+    .text.passport_verify {
+      margin: 15px 0;
+    }
+
+    .sup_title {
+      font-size: 16px;
+      color: var(--new_products);
+      margin: 55px 0 15px;
+    }
+
+    .sup_title.bottom_title {
+      margin-top: 15px;
+    }
+
+    .sup_title.quality {
+      margin-top: 0;
+    }
+
+    .rule_list {
+      margin-bottom: 40px;
+      padding-left: 40px;
+      list-style: circle !important;
+
+      li {
+        display: flex;
+        align-items: flex-start;
+        font-size: 15px;
+        color: var(--product_name);
+        font-family: sans-serif;
+        margin-bottom: 5px;
+
+        span {
+          width: 6px;
+          height: 6px;
+          min-width: 6px;
+          min-height: 6px;
+          display: block;
+          margin-right: 10px;
+          background-color: #9FAAB7;
+          border-radius: 50%;
+          margin-top: 7px;
+        }
+
+      }
+    }
+
+    img.passport_first {
+      width: 100%;
+      height: 100%;
+      max-width: 600px;
+      max-height: 500px;
+    }
+
+    img.passport_second {
+      width: 100%;
+      height: 100%;
+      max-width: 600px;
+      max-height: 330px;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .why_cherry_uz .container {
+    max-width: 730px;
+
+    .title {
+      font-size: 30px;
+    }
+  }
+
+}
+
+@media (max-width: 770px) {
+  .why_cherry_uz .container {
+    max-width: 540px;
+
+
+  }
+}
+
+@media (max-width: 575px) {
+  .why_cherry_uz .container {
+    max-width: 100%;
+
+    .title {
+      font-size: 24px;
+    }
+
+    .sup_title {
+      margin-top: 35px;
+    }
+
+
+  }
+}

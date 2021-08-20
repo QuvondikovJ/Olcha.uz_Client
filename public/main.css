@@ -1,0 +1,126 @@
+:root {
+    --header_link: rgba(0, 0, 0, 0.5);
+    --header_link_hover: rgba(0, 0, 0, 1);
+    --btn_bg: #EB1537;
+    --search_bg: #fff;
+    --product_name: #212529;
+    --search_placeholder: rgba(0, 0, 0, 0.5);
+    --search_border: #ced4da;
+    --new_products: #212529;
+    --category_link: #F1F1F1;
+    --navbar_border: rgba(0, 0, 0, .1);
+    --navbar_span_opactiy: .3;
+    --navbar_checkbox_border: #eee;
+    --login_bg: #f1f1f1;
+    --login_color: rgba(0, 0, 0, 1);
+    --search_color: #495057;
+    --product_box_shadow: rgba(0, 0, 0, .2);
+    --path_bg: #f0f2f4;
+    --body_bg: #fff;
+    --path_color: #9FAAB7;
+    --path_hover: #212529;
+    --help_animation_intial: #e4e8ec;
+    --help_animation_last: #fff;
+    --registered_icons: #a19d9d;
+    --balance_block_bg: #ffefd3;
+    --offer_block_bg: #eff4fd;
+    --password_edit_btn: #fff;
+    --password_edit_btn_opposite: #FF9017;
+    --comment_bg: #ebebea;
+    --scroll_bar : #d4d4d4;
+    --scroll_bar_bg: #f1f1f1;
+}
+
+.dark_theme {
+    --header_link: rgba(241, 241, 241, .8);
+    --header_link_hover: #fff;
+    --btn_bg: #EB1537;
+    --search_bg: #111111;
+    --search_placeholder: rgba(254, 254, 254, .6);
+    --search_border: #212529;
+    --body_bg: #212529;
+    --category_link: #212529;
+    --navbar_border: #111111;
+    --navbar_span_opactiy: 1;
+    --navbar_checkbox_border: #212529;
+    --login_bg: #111111;
+    --search_color: rgba(241, 241, 241, .8);
+    --login_color: rgba(241, 241, 241, .8);
+    --new_products: #fff;
+    --product_name: rgba(241, 241, 241, .8);
+    --product_box_shadow: #fff;
+    --path_bg: #111;
+    --path_color: #ddd;
+    --path_hover: #eb1537;
+    --help_animation_intial: #111;
+    --help_animation_last: #212529;
+    --registered_icons: #fff;
+    --balance_block_bg: #111;
+    --offer_block_bg: #111;
+    --password_edit_btn: #FF9017;
+    --password_edit_btn_opposite: #fff;
+    --comment_bg: #333;
+    --scroll_bar: #111;
+    --scroll_bar_bg: #333;
+}
+
+#body {
+    background-color: var(--body_bg);
+    font-family: sans-serif;
+}
+
+body.disabled,
+html.disabled {
+    position: relative;
+}
+
+body.disabled:after,
+html.disabled:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: .7;
+    z-index: 10;
+    transition: opacity .4s linear,
+    background-color .4s linear;
+}
+
+/* For product img */
+html.disabled,
+body.disabled{
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scroll_bar_bg);
+    border-radius: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll_bar);
+    border-radius: 8px;
+    border: 3px solid var(--scroll_bar_bg);
+    transition: background-color .2s linear;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #b4b0b0;
+}

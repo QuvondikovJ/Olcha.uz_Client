@@ -1,0 +1,143 @@
+.registered_user {
+  position: relative;
+
+  /* Registered btn */
+  .registered_btn {
+    width: 106px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 12px;
+    border: 0;
+    background-color: transparent;
+    border-radius: 6px;
+
+    i {
+      font-size: 18px;
+      color: var(--login_color);
+    }
+
+    .user {
+      font-size: 16px;
+      color: var(--login_color);
+      font-weight: 400;
+    }
+  }
+
+  .registered_btn:hover {
+    background-color: var(--login_bg);
+
+    i, .user {
+      color: #EB1537;
+    }
+  }
+
+  /*  Enter cabinet vis */
+
+  .enter_cabinet_vis {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 230px;
+    height: 250px;
+    z-index: 10;
+    background-color: var(--search_bg);
+    border-radius: 6px;
+    padding: 15px 0;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .1);
+
+
+    .text {
+      padding-left: 15px;
+      font-size: 15px;
+      color: var(--new_products);
+      margin-bottom: 5px;
+    }
+
+    .balance {
+      padding-left: 15px;
+      font-size: 15px;
+      color: var(--new_products);
+      margin-bottom: 5px;
+    }
+
+    .department {
+      padding: 8px 0 8px 15px;
+      display: flex;
+      align-items: center;
+
+      .department_icon {
+        display: block;
+        width: 22px;
+        height: 22px;
+        fill: var(--registered_icons);
+      }
+
+      span {
+        font-size: 15px;
+        color: var(--new_products);
+        padding-top: 4px;
+        margin: 0 0 0 12px;
+      }
+    }
+
+    .department.exit {
+      padding-left: 18px;
+
+      .department_icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .department:hover {
+      background-color: var(--navbar_checkbox_border);
+    }
+
+    .department:active {
+      background-color: #eb1537;
+
+      .department_icon {
+        fill: #fff;
+      }
+
+      span {
+        color: #fff;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 990px) {
+  .registered_user {
+
+    .registered_btn {
+
+      width: 40px;
+      height: 40px;
+
+      .user {
+        display: none;
+      }
+
+    }
+
+    .enter_cabinet_vis {
+      left: -220%
+    }
+
+  }
+}
+@media (max-width: 770px) {
+
+  .registered_user .registered_btn{
+    width: 45px;
+    height: 40px;
+    i{
+      font-size: 23px;
+    }
+  }
+
+}

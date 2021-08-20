@@ -1,0 +1,52 @@
+.confirmation_activation_code {
+  background-color: var(--search_bg);
+
+  .container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 80px 15px;
+
+    .activation_code_inner {
+      width: 100%;
+      max-width: 520px;
+      height: 360px;
+      padding: 36px;
+      margin: 0 auto;
+      border-radius: 6px;
+      box-shadow: 0 0 4px 1px rgba(0, 0, 0, .2);
+      background-color: var(--body_bg);
+
+
+      .activation_code {
+        margin-top: 5px;
+      }
+
+      form{
+        input{
+          margin-bottom: 0;
+        }
+      }
+
+      /* Resend code */
+      .resend_code {
+        width: 100%;
+        outline: none;
+        border: 0;
+        background-color: transparent;
+        font-size: 16px;
+        color: #9FAAB7;
+        display: block;
+        margin: 30px auto 0;
+        transition: color .2s linear,
+        text-decoration .2s linear;
+      }
+
+      .resend_code:hover {
+        color: #eb1537;
+        text-decoration: underline;
+      }
+    }
+  }
+
+}

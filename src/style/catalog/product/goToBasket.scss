@@ -1,0 +1,119 @@
+.go_to_basket_comp {
+  height: auto;
+  max-height: 95%;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 500px;
+  border-radius: 10px;
+  border: .5px solid var(--navbar_border);
+  background-color: var(--body_bg);
+  z-index: 100;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .title_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: .5px solid var(--navbar_border);
+
+    .title {
+      font-size: 18px;
+      color: var(--new_products);
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .close_icon {
+      display: block;
+      width: 14px;
+      height: 14px;
+      fill: #9FAAB7;
+      transition: transform .2s linear,
+      fill .2s linear;
+    }
+
+    .close_icon:hover {
+      fill: #eb1537;
+      transform: rotate(180deg);
+    }
+  }
+
+  .basket_item {
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+    overflow: auto !important;
+
+    .cart_inner_block {
+      position: relative;
+      padding-bottom: 58px;
+      margin-bottom: 10px;
+
+      .product_counter {
+        width: 120px;
+        position: absolute;
+        top: 110px;
+        left: 18px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .product_clear {
+        display: none;
+        position: absolute;
+        top: 110px;
+        right: 18px;
+      }
+
+      .product_price {
+        position: absolute;
+        top: 115px;
+        right: 0;
+        font-size: 18px;
+        width: auto!important;
+        left: calc(100% - 150px);
+      }
+    }
+
+
+    .go_basket_btn {
+      width: 100%;
+      height: 40px;
+      background-color: #eb1537;
+      transition: transform .2s linear,
+      background-color .2s linear;
+    }
+
+    .go_basket_btn:hover {
+      background-color: darken(#eb1537, 10%);
+    }
+
+    .go_basket_btn:active {
+      transform: scale(.99);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .go_to_basket_comp {
+    width: calc(100% - 30px);
+    left: 15px;
+
+    .basket_item .cart_inner_block{
+
+      .product_counter{
+        width: 110px;
+      }
+      .product_price{
+        width: auto!important;
+        left: calc(100% - 120px);
+      }
+    }
+
+  }
+
+}

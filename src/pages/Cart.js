@@ -1,11 +1,12 @@
-import EmptyCart from "../components/cart/EmptyCart";
-function Cart(){
+import Cart from "../components/cart/Cart";
+
+function CartPage(){
 
     return <div>
 
-        <EmptyCart />
+   <Cart/>
 
     </div>
 
 }
-export default Cart
+export default CartPage

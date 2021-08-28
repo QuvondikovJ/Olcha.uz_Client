@@ -2,6 +2,7 @@ import '../../style/home/mayBeNeededProducts.scss'
 import SliderTemplate from './template/SliderTemplate'
 import phone from "../../images/home/smartPhone.jpeg";
 import {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
 function MayBeNeededProducts() {
 
@@ -125,26 +126,26 @@ function MayBeNeededProducts() {
                 <div className="need_item">
                     <p className={'question'}>Nima uchun Olcha.uz?</p>
 
-                    <div className="need_department">
+                    <Link to={'/delivery'} className="need_department">
                         <i className={'icon fa fa-truck fa-lg'}> </i>
                         Yetkazib berish
-                    </div>
-                    <div className="need_department">
+                    </Link>
+                    <Link to={'/return-and-exchange'} className="need_department">
                         <i className="icon fa fa-shield-alt  fa-lg"> </i>
                         Sifat kafolati
-                    </div>
-                    <div className="need_department">
+                    </Link>
+                    <Link to={'/installment-terms'} className="need_department">
                         <i className="icon fa fa-credit-card  fa-lg"> </i>
                         Oson to'lov
-                    </div>
-                    <div className="need_department">
+                    </Link>
+                    <a href={'tel:+998971042969'} className="need_department">
                         <i className="icon fa fa-phone  fa-lg"> </i>
                         Qo'llab quvvatlash markazi
-                    </div>
-                    <div className="need_department">
+                    </a>
+                    <Link to={'/eco-friendly'} className="need_department">
                         <i className="icon fa fa-sync-alt  fa-lg"> </i>
                         Eco-friendly
-                    </div>
+                    </Link>
 
                 </div>
 

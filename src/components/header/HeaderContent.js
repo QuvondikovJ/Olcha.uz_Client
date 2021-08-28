@@ -1,16 +1,56 @@
 import logo from '../../images/logo/logo.svg'
 import '../../style/header/headerContent.scss'
 import svgRoot from '../../svgIcons.svg'
-import {useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import {Link} from "react-router-dom";
+import IsUserRegistered from "./isUserRegistered/IsUserRegistered";
+import IsUserNotRegistered from "./isUserRegistered/IsUserNotRegistered";
+import $ from "jquery";
+import {useDispatch, useSelector} from "react-redux";
+import {editCatalog} from "../../redux/reducers/CatalogVisibleReducer";
+import {editGoToBasket} from "../../redux/reducers/GoToBasketReducer";
 
 function HeaderContent() {
 
-    const catalog = useRef();
+    const [accessVisible, setAccessVisible] = useState(false)
+    const [isUserRegistered, setIsUserRegistered] = useState(false)
+
+    const dispatch = useDispatch();
+    const {catalog} = useSelector(({catalogVisibleReducer}) => catalogVisibleReducer)
 
     function catalogClicked() {
-        catalog.current.classList.toggle('click')
+        $('#catalog_btn').toggleClass('click')
+        $('body').toggleClass('disabled')
+        dispatch(editCatalog(!catalog))
     }
+
+    function accessClicked() {
+        setAccessVisible(!accessVisible)
+    }
+
+    useEffect(() => {
+        document.body.addEventListener('click', handleClickForCatalog)
+    }, [])
+
+    /* Add event listener for accessVis */
+    function handleClickForCatalog(event) {
+        /* For access to System*/
+        let accessVis = document.querySelector('#accessVis')
+        let checkVis = event.path.includes(accessVis)
+        !checkVis && setAccessVisible(false)
+
+
+        /*  For open catalog list  */
+        let catalogComp = document.querySelector('#catalog_comp')
+        let catalogBtn = document.querySelector('#catalog_btn')
+        let check = event.path.includes(catalogComp) || event.path.includes(catalogBtn)
+        if (!check) {
+            $('#catalog_btn').removeClass('click')
+            $('body').removeClass('disabled')
+            dispatch(editCatalog(false))
+        }
+    }
+
 
     return <div className={'header_content'}>
 
@@ -30,15 +70,15 @@ function HeaderContent() {
                     <div className="catalog_group">
 
                         {/* Catalog */}
-                        <button className="catalog btn btn-danger" ref={catalog} onClick={catalogClicked}>
+                        <button className="catalog btn btn-danger" id={'catalog_btn'} onClick={catalogClicked}>
                             <div className={'catalog_icon'}>
                                 {/* Menu  */}
                                 <svg className={'menu'}>
-                                    <use xlinkHref={svgRoot + '#menu'}>   </use>
+                                    <use xlinkHref={svgRoot + '#menu'}></use>
                                 </svg>
                                 {/* Menu close */}
                                 <svg className={'menu_close'}>
-                                    <use xlinkHref={svgRoot + '#menu_close'}>    </use>
+                                    <use xlinkHref={svgRoot + '#menu_close'}></use>
                                 </svg>
 
                             </div>
@@ -64,31 +104,32 @@ function HeaderContent() {
                 <div className="second_item">
 
                     {/* Login */}
-                    <Link to={'/login'}>
-                    <button className={'login'}>
-                        <i className="far fa-user"> </i>
-                        <span className={'user'}>Kirish</span>
-                    </button>
-                    </Link>
+                    {isUserRegistered ?
+                        <IsUserRegistered username={'Javohir'} balance={'0'} accessVisible={accessVisible}
+                                          setAccessVisible={setAccessVisible} accessClicked={accessClicked}/>
+                        : <IsUserNotRegistered accessVisible={accessVisible} setAccessVisible={setAccessVisible}
+                                               accessClicked={accessClicked}/>
+                    }
+
 
                     {/* Selected products */}
-                    <Link to={'/selectedProducts'}>
-                    <button className="selected">
-                        <i className="far fa-heart"> </i>
-                        <span className={'selected_item'}>Tanlangan</span>
-                    </button>
+                    <Link to={`${isUserRegistered ? '/cabinet/favourite' : '/selectedProducts'}`}>
+                        <button className="selected">
+                            <i className="far fa-heart"> </i>
+                            <span className={'selected_item'}>Tanlangan</span>
+                        </button>
                     </Link>
 
                     {/* EmptyCart */}
                     <Link to={'/cart'}>
-                    <button className="cart">
+                        <button className="cart">
 
-                        <svg className={'cart_icon'}>
-                            <use xlinkHref={svgRoot + '#cart'}></use>
-                        </svg>
-                        <span className={'cart_item'}>Savatcha</span>
-                        <span className="counter">0</span>
-                    </button>
+                            <svg className={'cart_icon'}>
+                                <use xlinkHref={svgRoot + '#cart'}></use>
+                            </svg>
+                            <span className={'cart_item'}>Savatcha</span>
+                            <span className="counter">0</span>
+                        </button>
                     </Link>
 
                 </div>

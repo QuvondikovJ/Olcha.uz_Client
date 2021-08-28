@@ -126,7 +126,7 @@
 
 @media (max-width: 1230px) {
 
-/* Bu width da xech narsa o'zgarmadi */
+  /* Bu width da xech narsa o'zgarmadi */
 
 }
 
@@ -153,14 +153,14 @@
 
   /* Bu widthda navbar-right ni 3 va 4 - elementlari display:none qilindi */
 
-  .header_top .container{
+  .header_top .container {
 
     max-width: 540px;
 
-    .navbar .nav_right{
+    .navbar .nav_right {
 
       a:nth-child(3),
-      a:nth-child(4){
+      a:nth-child(4) {
         display: none;
       }
 
@@ -169,10 +169,17 @@
 
 }
 
-@media (max-width: 400px) {
-  .header_top .navbar .nav_right{
+@media (max-width: 575px) {
+  .header_top .container {
+    max-width: 100%;
+  }
+}
 
-    a:nth-child(5){
+
+@media (max-width: 400px) {
+  .header_top .navbar .nav_right {
+
+    a:nth-child(5) {
       display: none;
     }
 

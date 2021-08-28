@@ -75,39 +75,39 @@ function Category() {
 
 
     return <div className={'category_block'}>
-        <div className="container" id={'container'}>
+         <div className="container" id={'container'}>
 
-            <h2 className={'title'}>Kategoriyalar</h2>
+             <h2 className={'title'}>Kategoriyalar</h2>
 
-            <div className="slider">
+             <div className="slider">
 
-                <Slider   {...settings} ref={slider}>
+                 <Slider   {...settings} ref={slider}>
 
-                    {categories.map((item, index) =>
-                        <div className="slider_item" key={index} onClickCapture={slickChange}>
+                     {categories.map((item, index) =>
+                         <div className="slider_item" key={index} onClickCapture={slickChange}>
 
-                            <div className={'category'}>
-                                <img src={carwash} alt="Not found!"/>
-                                <p className={'category_name'}>
-                                    {item}
-                                </p>
-                            </div>
-                        </div>
-                    )}
+                             <div className={'category'}>
+                                 <img src={carwash} alt="Not found!"/>
+                                 <p className={'category_name'}>
+                                     {item}
+                                 </p>
+                             </div>
+                         </div>
+                     )}
 
-                </Slider>
+                 </Slider>
 
 
-                <span className={'prev'} onClick={prevClicked} id={spanPrev}>
-                    <i className="fas fa-chevron-left"> </i>
-                </span>
-                <span className={'next'} onClick={nextClicked} id={spanNext}>
-               <i className="fas fa-chevron-right"> </i>
-                </span>
+                 <span className={'prev'} onClick={prevClicked} id={spanPrev}>
+                     <i className="fas fa-chevron-left"> </i>
+                 </span>
+                 <span className={'next'} onClick={nextClicked} id={spanNext}>
+                <i className="fas fa-chevron-right"> </i>
+                 </span>
 
-            </div>
+             </div>
 
-        </div>
+         </div>
 
     </div>
 

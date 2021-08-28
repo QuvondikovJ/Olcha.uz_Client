@@ -39,5 +39,9 @@
 
   .new_products {
     padding-bottom: 15px;
+
+    .container {
+      max-width: 100%;
+    }
   }
 }

@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom";
-import phone from '../../../images/home/phone.jpeg'
-import ear_phone from '../../../images/home/ear_phone.png'
-import carwash from '../../../images/home/carwash.png'
-import smartPhone from '../../../images/home/smartPhone.jpeg'
+import sma3 from '../../../images/smart_watch_1.jpeg'
+import sma2 from '../../../images/smart_watch_2.jpeg'
+import sma1 from '../../../images/smart_watch_3.jpeg'
+import phone from '../../../images/home/smartPhone.jpeg'
 import avto from '../../../images/home/avto_jihoz.png'
 import svgRoot from '../../../svgIcons.svg'
 import {useEffect, useRef, useState} from "react";
@@ -18,7 +18,7 @@ import {useDispatch} from "react-redux";
 function Product() {
 
     const photos = [
-        phone, avto, smartPhone, carwash, ear_phone
+        sma1, sma2, sma3
     ]
 
     const productName = 'Blackview A70 3/32GB Blue'
@@ -115,7 +115,7 @@ function Product() {
 
     const devices = [
         {
-            img: phone,
+            img: sma1,
             category: ' Smartfonlar',
             name: 'Samsung Galaxy A01 Core 1/16GB, Black',
             rassrochka: ' 101000 so\'m/oy',
@@ -123,7 +123,7 @@ function Product() {
             price: '1 038 000 so\'m'
         },
         {
-            img: phone,
+            img: sma2,
             category: ' Smartfonlar',
             name: 'Samsung Galaxy A01 Core 1/16GB, Black',
             rassrochka: ' 101000 so\'m/oy',
@@ -131,7 +131,7 @@ function Product() {
             price: '1 038 000 so\'m'
         },
         {
-            img: phone,
+            img: sma3,
             category: ' Smartfonlar',
             name: 'Samsung Galaxy A01 Core 1/16GB, Black',
             rassrochka: ' 101000 so\'m/oy',
@@ -437,11 +437,11 @@ function Product() {
                             <div className="color_block">
                                 <p className="color_title">Rangi</p>
                                 <div className="color_content">
-                                {colors.map((item, index) =>
-                                    <button className={'color_item'} key={index}>
-                                        {item}
-                                    </button>
-                                )}
+                                    {colors.map((item, index) =>
+                                        <button className={'color_item'} key={index}>
+                                            {item}
+                                        </button>
+                                    )}
                                 </div>
                             </div>
 

@@ -1,5 +1,6 @@
 .delivery {
   padding: 40px 0;
+  font-family: sans-serif !important;
 
   .container {
     width: 100%;
@@ -61,18 +62,21 @@
   .delivery {
     padding: 25px 0;
 
-    .container .delivery_inner {
-      margin-right: auto;
+    .container {
+      max-width: 100%;
 
-      .title {
-        font-size: 30px;
+      .delivery_inner {
+        margin-right: auto;
+
+        .title {
+          font-size: 30px;
+        }
+
+        .supTitle {
+          font-size: 22px;
+        }
+
       }
-
-      .supTitle {
-        font-size: 22px;
-      }
-
     }
-
   }
 }

@@ -3,6 +3,7 @@ import phone from '../../images/home/smartPhone.jpeg'
 import '../../style/home/newProduct.scss'
 import {useEffect, useState} from "react";
 import forSliderResponsiveMethod from "./template/ForSliderResponsiveMethod";
+import useForceUpdate from "use-force-update";
 function NewProducts(){
 
     const devices = [
@@ -104,10 +105,19 @@ function NewProducts(){
 
     const [slickSettings, setSlickSettings] = useState(settings)
 
-    useEffect(() => {
-        setSlickSettings(forSliderResponsiveMethod(slickSettings,180))
+    const forceUpdate = useForceUpdate()
+    // window.onresize = changeSizeWindow
+    //
+    function changeSizeWindow() {
+        if (window.innerWidth > 1230) {
+            setSlickSettings(forSliderResponsiveMethod(slickSettings, 220))
+        } else setSlickSettings(forSliderResponsiveMethod(slickSettings, 180))
+    }
 
-    }, []);
+
+    useEffect(()=>{
+        changeSizeWindow()
+    },[])
 
 
     return <div className={'new_products'}>

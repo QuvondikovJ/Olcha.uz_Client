@@ -181,6 +181,7 @@
     .slider {
       max-width: 400px;
       height: 400px;
+
       .slider_item {
         display: block;
         padding: 50px 10px 0;
@@ -273,20 +274,21 @@
 
 @media (max-width: 575px) {
 
-  .most_top_slider{
+  .most_top_slider {
     margin-bottom: 20px;
-  .container {
-    max-width: 540px;
 
-    /* Slider */
-    .slider .slider_item {
+    .container {
+      max-width: 540px;
 
-      img {
-        max-width: 280px;
-        width: 100%;
-        height: 140px;
+      /* Slider */
+      .slider .slider_item {
+
+        img {
+          max-width: 280px;
+          width: 100%;
+          height: 140px;
+        }
       }
-    }
     }
   }
 }

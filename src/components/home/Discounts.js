@@ -28,44 +28,43 @@ function Discounts() {
 
 
     window.onscroll = scrollFunction
-
     const products = [
         {
-            name: 'Veb-kamera defender c-2525',
-            payment: '115000 so‘m/oy',
-            discount: '1 500 000 so‘m',
-            price: '1 177 000 so‘m'
-        }, {
-            name: 'Veb-kamera defender c-2525',
-            payment: '115000 so‘m/oy',
-            discount: '1 500 000 so‘m',
-            price: '1 177 000 so‘m'
-        }, {
-            name: 'Veb-kamera defender c-2525',
-            payment: '115000 so‘m/oy',
-            discount: '1 500 000 so‘m',
-            price: '1 177 000 so‘m'
-        }, {
-            name: 'Veb-kamera defender c-2525',
-            payment: '115000 so‘m/oy',
-            discount: '1 500 000 so‘m',
-            price: '1 177 000 so‘m'
-        }, {
-            name: 'Veb-kamera defender c-2525',
-            payment: '115000 so‘m/oy',
-            discount: '1 500 000 so‘m',
-            price: '1 177 000 so‘m'
-        }, {
-            name: 'Veb-kamera defender c-2525',
-            payment: '115000 so‘m/oy',
-            discount: '1 500 000 so‘m',
-            price: '1 177 000 so‘m'
-        }, {
-            name: 'Veb-kamera defender c-2525',
-            payment: '115000 so‘m/oy',
-            discount: '1 500 000 so‘m',
-            price: '1 177 000 so‘m'
-        },
+        name: 'Veb-kamera defender c-2525',
+        payment: '115000 so‘m/oy',
+        discount: '1 500 000 so‘m',
+        price: '1 177 000 so‘m'
+    }, {
+        name: 'Veb-kamera defender c-2525',
+        payment: '115000 so‘m/oy',
+        discount: '1 500 000 so‘m',
+        price: '1 177 000 so‘m'
+    }, {
+        name: 'Veb-kamera defender c-2525',
+        payment: '115000 so‘m/oy',
+        discount: '1 500 000 so‘m',
+        price: '1 177 000 so‘m'
+    }, {
+        name: 'Veb-kamera defender c-2525',
+        payment: '115000 so‘m/oy',
+        discount: '1 500 000 so‘m',
+        price: '1 177 000 so‘m'
+    }, {
+        name: 'Veb-kamera defender c-2525',
+        payment: '115000 so‘m/oy',
+        discount: '1 500 000 so‘m',
+        price: '1 177 000 so‘m'
+    }, {
+        name: 'Veb-kamera defender c-2525',
+        payment: '115000 so‘m/oy',
+        discount: '1 500 000 so‘m',
+        price: '1 177 000 so‘m'
+    }, {
+        name: 'Veb-kamera defender c-2525',
+        payment: '115000 so‘m/oy',
+        discount: '1 500 000 so‘m',
+        price: '1 177 000 so‘m'
+    },
         {
             name: 'Veb-kamera defender c-2525',
             payment: '115000 so‘m/oy',
@@ -97,31 +96,31 @@ function Discounts() {
                     <h2 className={'title'}> Chegirmalar</h2>
                     <div className={'discount_products'}>
 
-                        {products.map((item, index) =>
-                                <div className="dis_product_item" key={index}>
-                                    <img src={phone} alt={'Not found!'}/>
+                            {products.map((item, index) =>
+                                    <div className="dis_product_item" key={index}>
+                                        <img src={phone} alt={'Not found!'}/>
 
-                                    <p className={'product_name'}>
-                                        {item.name}
-                                    </p>
+                                        <p className={'product_name'}>
+                                            {item.name}
+                                        </p>
 
-                                    <p className={'rassrochka'}> {item.payment}</p>
-                                    <p className={'discount'}> {item.discount}</p>
-                                    <p className={'price'}>{item.price}</p>
+                                        <p className={'rassrochka'}> {item.payment}</p>
+                                        <p className={'discount'}> {item.discount}</p>
+                                        <p className={'price'}>{item.price}</p>
 
-                                    <span className={'heart'}>
-                        <i className="far fa-heart"> </i>
-                                        {/*<i className="fas fa-heart">  </i>*/}
-                    </span>
+                                        <span className={'heart'}>
+                            <i className="far fa-heart"> </i>
+                                            {/*<i className="fas fa-heart">  </i>*/}
+                        </span>
 
-                                    <span className={'delivery'}>
-                        <svg>
-                            <use xlinkHref={star + '#delivery'}> </use>
-                        </svg>
-                    </span>
+                                        <span className={'delivery'}>
+                            <svg>
+                                <use xlinkHref={star + '#delivery'}> </use>
+                            </svg>
+                        </span>
 
-                                </div>
-                        )}
+                                    </div>
+                            )}
 
                     </div>
 

@@ -1,9 +1,12 @@
-export default function forSliderResponsiveMethod(slickSettings, sliderWidth){
+export default function forSliderResponsiveMethod(slickSettings, sliderWidth) {
     let containerWidth = document.getElementById('container').offsetWidth;
-    let countSlide = (containerWidth-30)/sliderWidth
+    let countSlide = (containerWidth - 30) / sliderWidth
     if (containerWidth < 1230) {
         slickSettings.slidesToShow = countSlide
-        if(slickSettings.infinite) slickSettings.initialSlide = parseInt(countSlide)+1-countSlide
+        if (slickSettings.infinite) slickSettings.initialSlide = parseInt(countSlide) + 1 - countSlide
+    } else {
+        slickSettings.slidesToShow = countSlide
+        slickSettings.initialSlide = .5
     }
     return {...slickSettings}
 }

@@ -4,6 +4,9 @@ import star from '../../../svgIcons.svg'
 import Slider from 'react-slick'
 import {previous, next, sliderChange} from "./methodsForSlider";
 import {useEffect, useRef, useState,} from "react";
+import ProductItem from "./ProductItem";
+import forSliderResponsiveMethod from "./ForSliderResponsiveMethod";
+import useForceUpdate from "use-force-update";
 
 function SliderTemplate({devices, blockTitle, slickSettings, spanPrev, spanNext, maxSlide}) {
 
@@ -13,31 +16,45 @@ function SliderTemplate({devices, blockTitle, slickSettings, spanPrev, spanNext,
     useEffect(() => {
         if (slider.current.innerSlider.state.currentSlide <= 1 && !slickSettings.infinite)
             document.getElementById(spanPrev).classList.add('disabled')
-    },[])
+    }, [])
+
+
+    // const forceUpdate = useForceUpdate()
+    // window.onresize = changeSizeWindow
+
+
+    // window.onresize = changeSizeWindow
+    //
+    // function changeSizeWindow() {
+    //     // forceUpdate()
+    //     console.log('dddd')
+    //     if (window.innerWidth > 1230) {
+    //         setSlickSettings(forSliderResponsiveMethod(slickSettings, 220))
+    //     } else setSlickSettings(forSliderResponsiveMethod(slickSettings, 180))
+    // }
+
+
 
 
     useEffect(() => {
+       // forceUpdate()
         if (slickSettings.infinite) {
             setTimeout(() => {
                 slider.current.slickGoTo(slickSettings.initialSlide)
             }, 500)
         }
-    }, []);
+    }, [slickSettings]);
 
 
-    function heartClicked(index) {
-
-    }
-
-    function slickChange(){
+    function slickChange() {
         sliderChange(slider, slickSettings, spanPrev, spanNext, maxSlide)
     }
 
-    function prevClicked(){
-        previous(slider,slickSettings, spanPrev, spanNext, maxSlide)
+    function prevClicked() {
+        previous(slider, slickSettings, spanPrev, spanNext, maxSlide)
     }
 
-    function nextClicked(){
+    function nextClicked() {
         let newMaxslide = parseInt(maxSlide)
         next(slider, slickSettings, spanPrev, spanNext, newMaxslide)
     }
@@ -55,46 +72,7 @@ function SliderTemplate({devices, blockTitle, slickSettings, spanPrev, spanNext,
                 {devices.map((item, index) =>
                     <div className="slider_item" key={index} onClickCapture={slickChange}>
 
-                              <span className={'product_img'}>
-                                  <img src={item.img} alt="Not found!"/>
-                                  </span>
-                        <a className={'product_category'}>{item.category}</a>
-                        <a className={'product_name'}>{item.name}</a>
-                        <p className={'star'}>
-
-                            <svg className={'star_item'}>
-                                <use xlinkHref={star + '#star'}></use>
-                            </svg>
-                            <svg className={'star_item'}>
-                                <use xlinkHref={star + '#star'}></use>
-                            </svg>
-                            <svg className={'star_item'}>
-                                <use xlinkHref={star + '#star'}></use>
-                            </svg>
-                            <svg className={'star_item'}>
-                                <use xlinkHref={star + '#star'}></use>
-                            </svg>
-                            <svg className={'star_item'}>
-                                <use xlinkHref={star + '#star'}></use>
-                            </svg>
-
-                        </p>
-
-                        <p className={'rassrochka'}> {item.rassrochka}</p>
-                        <p className={'discount'}> {item.discount}</p>
-                        <p className={'price'}>{item.price}</p>
-
-                        <span className={'heart'} onClick={() => heartClicked(index)}>
-                        <i className="far fa-heart"> </i>
-                            {/*<i className="fas fa-heart">  </i>*/}
-                    </span>
-
-                        <span className={'delivery'}>
-                        <svg>
-                            <use xlinkHref={star + '#delivery'}> </use>
-                        </svg>
-                    </span>
-
+                        <ProductItem item={item}/>
                     </div>
                 )}
             </Slider>

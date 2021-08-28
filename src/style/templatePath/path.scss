@@ -23,8 +23,15 @@
 
 }
 @media (max-width: 575px) {
-  .path a{
-    font-size: 13px;
+  .path {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    a {
+      font-size: 13px;
+    }
   }
+
 
 }

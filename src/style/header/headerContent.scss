@@ -24,6 +24,7 @@
         .catalog_group {
           display: flex;
           align-items: center;
+          height: 47px;
 
           .catalog {
             width: 117px;
@@ -67,7 +68,8 @@
 
           .catalog.click {
             background-color: #bd102c;
-
+            position: absolute;
+            z-index: 15;
 
             .catalog_icon {
               .menu {
@@ -80,6 +82,10 @@
             }
           }
 
+          .catalog.click + .search {
+            padding-left: 147px;
+          }
+
           .catalog:active {
             transform: scale(.96);
           }
@@ -89,26 +95,24 @@
           .search {
             display: flex;
             align-items: center;
+            height: 40px;
+            padding-top: 6px;
 
             .search_form {
               display: flex;
-              align-items: center;
+              height: 100%;
 
               input {
                 width: 370px;
                 height: 40px;
                 border: 1.5px solid var(--search_border);
-                border-top-left-radius: 5px;
-                border-bottom-left-radius: 5px;
-                padding: 0 10px;
+                border-radius: 5px 0 0 5px;
                 color: var(--search_color);
                 font-size: 1rem;
                 outline: none;
-                top: 3.5px;
-                left: 3.5px;
-                z-index: 10;
                 box-shadow: 0 0 1px 1px rgba(0, 0, 0, .1) inset;
                 background-color: var(--search_bg);
+                margin-bottom: 0;
               }
 
               input::placeholder {
@@ -141,6 +145,7 @@
 
             }
           }
+
         }
 
       }
@@ -150,39 +155,6 @@
       .second_item {
         display: flex;
         align-items: center;
-
-        /* Login */
-        .login {
-          width: 95px;
-          height: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 5px 12px;
-          border: 0;
-          background-color: transparent;
-          border-radius: 6px;
-
-          i {
-            font-size: 18px;
-            color: var(--login_color);
-          }
-
-          .user {
-            font-size: 16px;
-            color: var(--login_color);
-            font-weight: 400;
-          }
-
-        }
-
-        .login:hover {
-          background-color: var(--login_bg);
-
-          i, .user {
-            color: #EB1537;
-          }
-        }
 
 
         /* Selected products  */
@@ -356,16 +328,16 @@
         }
       }
 
-      /*  Second item  */
-      .second_item a{
 
-        .login .user,
+      /*  Second item  */
+      .second_item a {
+
         .selected .selected_item,
         .cart .cart_item {
           display: none;
         }
 
-        .login, .selected, .cart {
+        .selected, .cart {
           width: 40px;
           height: 40px;
         }
@@ -377,6 +349,7 @@
         .cart {
           padding: 8px;
         }
+
       }
 
     }
@@ -443,9 +416,9 @@
       }
 
       /* Second item */
-      .second_item a{
+      .second_item a {
 
-        .login, .selected, .cart {
+        .selected, .cart {
           width: 45px;
           height: 40px;
 
@@ -468,22 +441,26 @@
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 575px) {
 
   /*  Bu width da input ni width uzaytirildi */
-  .header_content .container .logo_row {
+  .header_content .container {
+    max-width: 100%;
 
-    .first_item .catalog_group {
-      width: 100%;
+    .logo_row {
 
-      .search {
-        width: 90%;
+      .first_item .catalog_group {
+        width: 100%;
 
-        .search_form {
-          width: 100%;
+        .search {
+          width: 90%;
 
-          input {
+          .search_form {
             width: 100%;
+
+            input {
+              width: 100%;
+            }
           }
         }
       }

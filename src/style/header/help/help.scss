@@ -146,22 +146,25 @@
 }
 
 @media (max-width: 575px) {
-  .help .container .help_inner {
+  .help .container {
+    max-width: 100%;
 
-    .help_item {
-      max-width: 100%;
-    }
+    .help_inner {
 
-    .help_item:last-child {
-
-      .help_title {
-        font-size: 22px;
+      .help_item {
+        max-width: 100%;
       }
 
-      .help_block .question {
-        font-size: 16px;
-      }
+      .help_item:last-child {
 
+        .help_title {
+          font-size: 22px;
+        }
+
+        .help_block .question {
+          font-size: 16px;
+        }
+      }
     }
   }
 }

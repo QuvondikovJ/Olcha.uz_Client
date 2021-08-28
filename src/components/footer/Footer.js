@@ -19,13 +19,13 @@ function Footer() {
                 <div className="footer_item">
                     <p className={'footer_link'}>Shaxsiy ma’lumotlar bilan ishlash siyosati</p>
                     <Link to={'/help'} className={'footer_link'}>Yordam</Link>
-                    <p className={'footer_link'}>Muddatli to’lov shartlari</p>
-                    <p className={'footer_link'}>Biz xaqimizda</p>
+                    <Link to={'/return-and-exchange'} className={'footer_link'}>Muddatli to’lov shartlari</Link>
+                    <Link to={'/about-us'}  className={'footer_link'}>Biz xaqimizda</Link>
                 </div>
 
                 <div className="footer_item">
-                    <p className={'footer_link'}> Ommaviy oferta</p>
-                    <p className={'footer_link'}> Eco-friendly</p>
+                    <Link to={'/public-offer'} className={'footer_link'}> Ommaviy oferta</Link>
+                    <Link to={'/eco-friendly'} className={'footer_link'}> Eco-friendly</Link>
                     <Link to={'/compare'} className={'footer_link compare'}> Taqqoslash</Link>
                     <Link to={'/delivery'} className={'footer_link'}> To‘lov va yetkazib berish xizmati</Link>
                 </div>

@@ -33,5 +33,9 @@
 
   .many_selected {
     margin-bottom: 15px;
+
+    .container {
+      max-width: 100%;
+    }
   }
 }

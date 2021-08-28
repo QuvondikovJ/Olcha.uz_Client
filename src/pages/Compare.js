@@ -1,12 +1,12 @@
-import EmptyCompare from "../components/compare/EmptyCompare";
-function Compare(){
+import Compare from "../components/compare/Compare";
+function ComparePage(){
 
 
     return <div>
 
-        <EmptyCompare/>
+        <Compare/>
 
     </div>
 
 }
-export default Compare
+export default ComparePage

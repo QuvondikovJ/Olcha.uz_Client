@@ -1,8 +1,9 @@
 import '../../style/home/manySelected.scss'
 import phone from '../../images/home/phone.jpeg'
 import SliderTemplate from "./template/SliderTemplate";
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import forSliderResponsiveMethod from "./template/ForSliderResponsiveMethod";
+import useForceUpdate from "use-force-update";
 
 function ManySelected() {
 
@@ -94,8 +95,8 @@ function ManySelected() {
     let settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 5.5,
-        initialSlide: .5,
+        slidesToShow: 5.4,
+        initialSlide: .6,
         slidesToScroll: 1,
         autoplay: true,
         speed: 300,
@@ -108,10 +109,18 @@ function ManySelected() {
 
     const [slickSettings, setSlickSettings] = useState(settings)
 
-    useEffect(() => {
-        setSlickSettings(forSliderResponsiveMethod(slickSettings, 180))
-    }, []);
+    // const forceUpdate = useForceUpdate()
+    // window.onresize = changeSizeWindow
+    //
+    function changeSizeWindow() {
+        if (window.innerWidth > 1230) {
+            setSlickSettings(forSliderResponsiveMethod(slickSettings, 220))
+        } else setSlickSettings(forSliderResponsiveMethod(slickSettings, 180))
+    }
 
+    useEffect(()=>{
+        changeSizeWindow()
+    },[])
 
     return <div className={'many_selected'}>
         <div className="container" id={'container'}>

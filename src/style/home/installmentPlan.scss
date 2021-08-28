@@ -8,9 +8,8 @@
     padding: 0 20px;
 
 
-
     .prev.disabled,
-    .next.disabled{
+    .next.disabled {
       opacity: .4;
       pointer-events: none;
     }
@@ -39,5 +38,10 @@
 
   .installment_plan {
     padding-bottom: 15px;
+
+    .container {
+      max-width: 100%;
+    }
+
   }
 }

@@ -103,10 +103,23 @@ function InstallmentPlan() {
 
 
     const [slickSettings, setSlickSettings] = useState(settings)
+    //
+    // useEffect(() => {
+    //     setSlickSettings(forSliderResponsiveMethod(slickSettings,180))
+    // }, []);
+    //
+    //
 
-    useEffect(() => {
-        setSlickSettings(forSliderResponsiveMethod(slickSettings,180))
-    }, []);
+    function changeSizeWindow() {
+        if (window.innerWidth > 1230) {
+            setSlickSettings(forSliderResponsiveMethod(slickSettings, 220))
+        } else setSlickSettings(forSliderResponsiveMethod(slickSettings, 180))
+    }
+
+
+    useEffect(()=>{
+        changeSizeWindow()
+    },[])
 
 
 

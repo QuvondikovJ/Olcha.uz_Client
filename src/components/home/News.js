@@ -5,6 +5,7 @@ import {useEffect, useRef, useState} from "react";
 import {next, previous, sliderChange} from "./template/methodsForSlider";
 import bg from '../../images/home/bg_img.png'
 import forSliderResponsiveMethod from "./template/ForSliderResponsiveMethod";
+import NewsItem from "../news/NewsItem";
 
 function News() {
 
@@ -80,16 +81,8 @@ function News() {
 
     useEffect(() => {
         let containerWidth = document.getElementById('container').offsetWidth
-
-        if (containerWidth < 540) {
-            setSlickSettings(forSliderResponsiveMethod(slickSettings, 270))
-        } else {
-            setSlickSettings(forSliderResponsiveMethod(slickSettings, 320))
-        }
-        setTimeout(() => {
-            slider.current.slickGoTo(slickSettings.initialSlide)
-        }, 500)
-
+        if (containerWidth < 540) setSlickSettings(forSliderResponsiveMethod(slickSettings, 270))
+        else setSlickSettings(forSliderResponsiveMethod(slickSettings, 320))
     }, []);
 
 
@@ -122,19 +115,7 @@ function News() {
                 <Slider ref={slider} {...slickSettings}>
 
                     {news.map((item, index) =>
-                        <div className="news_item" key={index} onClickCapture={slickChange}>
-                            <div className="news_title">
-                                {item.title}
-                            </div>
-
-                            <p className={'news_date'}>
-                                {item.date}
-                            </p>
-                            <span
-                                style={changeBackground(index)} className={'bg_gradient'}>
-                            </span>
-                            <img src={bg} alt="Not found!" className={'news_img'}/>
-                        </div>
+                     <NewsItem item={item} slickChange={slickChange} changeBackground={changeBackground} index={index}/>
                     )}
 
                 </Slider>

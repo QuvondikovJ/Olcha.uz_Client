@@ -21,8 +21,8 @@ function HeaderTop() {
                 </nav>
 
                 <nav className="nav_right">
-                    <a href={'#'} className={'nav_link'}> Muddatli to'lov </a>
-                    <a href={'#'} className={'nav_link'}>Chegirmalar </a>
+                    <a href={'/installment-plan'} className={'nav_link'}> Muddatli to'lov </a>
+                    <a href={'/discount'} className={'nav_link'}>Chegirmalar </a>
                     <Link to={'/delivery'} className={'nav_link'}>Yetkazib berish </Link>
                     <Link to={'/help'} className={'nav_link'}>Yordam </Link>
                     <Link to={'/compare'} className={'nav_link'}>Taqqoslash </Link>
